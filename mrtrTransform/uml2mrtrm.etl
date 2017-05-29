@@ -32,22 +32,22 @@ rule Class2Feature
 // Transforms properties into fields and adds them to the corresponding Form
 rule Property2Component
 	transform p : uml!Property
-	to f : mrtrm!Component {
+	to f : mrtrm!ComponentUI {
 	
 	guard {
-		return p.hasStereotype("wspa::Component");
+		return p.hasStereotype("wspa::ComponentUI");
 	}
 	
-	var nameValue = p.getPropertyValue("Component","name").asString(); 
+	var nameValue = p.getPropertyValue("ComponentUI","name").asString(); 
 	if(nameValue.length() > 0) {
 		f.name = nameValue;
 	} else {
-		f.name = p.name + "Componente";
+		f.name = p.name + "ComponentUI";
 	}
-	f.label = p.getPropertyValue("Component", "label");
-	f.toolTip = p.getPropertyValue("Component", "tooltip");
-	p.feature.equivalent().componentsUI.add(f);
-	"Nombre Feature: "+p.feature.name.print();
+	f.label = p.getPropertyValue("ComponentUI", "label");
+	//f.toolTip = p.getPropertyValue("Component", "toolTip");
+	p.class.equivalent().componentsUI.add(f);
+	//"Nombre Feature: "+p.feature.name.print();
 } 
 
 /*@abstract

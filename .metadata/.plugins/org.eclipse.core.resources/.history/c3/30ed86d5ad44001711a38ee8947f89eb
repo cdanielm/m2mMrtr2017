@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mrtrm="http://www.example.org/mrtrm">
+  <mrtrm:WebApplicacion name="Mi Ruta tu Ruta">
+    <features name="VehiculoFeature"/>
+    <features name="PostulacionFeature"/>
+    <features name="RutaFeature"/>
+    <features name="UsuarioFeature"/>
+  </mrtrm:WebApplicacion>
+  <mrtrm:ComponentUI name="NombreComponentUI"/>
+  <mrtrm:ComponentUI name="PlacaComponentUI"/>
+  <mrtrm:ComponentUI name="ColorComponentUI"/>
+  <mrtrm:ComponentUI name="TipoVehiculoComponentUI"/>
+  <mrtrm:ComponentUI name="FechaPostulacionComponentUI"/>
+  <mrtrm:ComponentUI name="EstadoPostulacionComponentUI"/>
+  <mrtrm:ComponentUI name="NombreComponentUI"/>
+  <mrtrm:ComponentUI name="LongitudInicioComponentUI"/>
+  <mrtrm:ComponentUI name="LatitudInicioComponentUI"/>
+  <mrtrm:ComponentUI name="LongitudFinComponentUI"/>
+  <mrtrm:ComponentUI name="LatitudFinComponentUI"/>
+  <mrtrm:ComponentUI name="CupoTotalComponentUI"/>
+  <mrtrm:ComponentUI name="FechaEjecucionComponentUI"/>
+  <mrtrm:ComponentUI name="DescripcionComponentUI"/>
+  <mrtrm:ComponentUI name="CondicionesComponentUI"/>
+  <mrtrm:ComponentUI name="EmailComponentUI"/>
+  <mrtrm:ComponentUI name="NombreComponentUI"/>
+  <mrtrm:ComponentUI name="contrasenaComponentUI"/>
+</xmi:XMI>
