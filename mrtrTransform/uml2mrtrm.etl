@@ -30,37 +30,35 @@ rule Class2Feature
 }
 
 // Transforms properties into fields and adds them to the corresponding Form
-/*rule Property2Field
+rule Property2Component
 	transform p : uml!Property
-	to f : mrtrm!Field {
+	to f : mrtrm!Component {
 	
 	guard {
-		return p.hasStereotype("WFVProfile::Field") or p.hasStereotype("WFVProfile::MandatoryField") or
-				p.hasStereotype("WFVProfile::DateField") or p.hasStereotype("WFVProfile::IntField") or
-				p.hasStereotype("WFVProfile::RealField") or p.hasStereotype("WFVProfile::RegExField");
+		return p.hasStereotype("wspa::Component");
 	}
 	
-	var nameValue = p.getPropertyValue("Field","name").asString(); 
+	var nameValue = p.getPropertyValue("Component","name").asString(); 
 	if(nameValue.length() > 0) {
 		f.name = nameValue;
 	} else {
-		f.name = p.name + "Field";
+		f.name = p.name + "Componente";
 	}
-	f.label = p.getPropertyValue("Field", "label");
-	f.toolTip = p.getPropertyValue("Field", "toolTip");
-	p.class.equivalent().fields.add(f);
-	
+	f.label = p.getPropertyValue("Component", "label");
+	f.toolTip = p.getPropertyValue("Component", "tooltip");
+	p.feature.equivalent().componentsUI.add(f);
+	"Nombre Feature: "+p.feature.name.print();
 } 
 
-@abstract
+/*@abstract
 rule Property2Validator
 	transform p : uml!Property
 	to v : mrtrm!Validator {
 	
 	guard {
-		return  p.hasStereotype("WFVProfile::MandatoryField") or
-				p.hasStereotype("WFVProfile::DateField") or p.hasStereotype("WFVProfile::IntField") or
-				p.hasStereotype("WFVProfile::RealField") or p.hasStereotype("WFVProfile::RegExField");
+		return  p.hasStereotype("wspa::MandatoryField") or
+				p.hasStereotype("wspa::DateField") or p.hasStereotype("wspa::IntField") or
+				p.hasStereotype("wspa::RealField") or p.hasStereotype("wspa::RegExField");
 	}
 	
 	v.name = p.name + "Validator";
@@ -72,7 +70,7 @@ rule Property2MandatoryValidator
 	to v : mrtrm!MandatoryValidator
 	extends Property2Validator {
 	
-	guard : p.hasStereotype("WFVProfile::MandatoryField")
+	guard : p.hasStereotype("wspa::MandatoryField")
 	
 	p.equivalent().validators.add(v);
 }
@@ -82,7 +80,7 @@ rule Property2DateValidator
 	to v : mrtrm!DateValidator
 	extends Property2Validator {
 	
-	guard : p.hasStereotype("WFVProfile::DateField")
+	guard : p.hasStereotype("wspa::DateField")
 	
 	v.format = p.getPropertyValue("DateField", "format");
 	p.equivalent().validators.add(v);
@@ -93,7 +91,7 @@ rule Property2IntegerValidator
 	to v : mrtrm!IntegerValidator
 	extends Property2Validator {
 	
-	guard : p.hasStereotype("WFVProfile::IntField")
+	guard : p.hasStereotype("wspa::IntField")
 	
 	var minValue = p.getPropertyValue("IntField", "minValue");
 	var maxValue = p.getPropertyValue("IntField", "maxValue"); 
@@ -109,7 +107,7 @@ rule Property2RealValidator
 	to v : mrtrm!RealValidator
 	extends Property2Validator {
 	
-	guard : p.hasStereotype("WFVProfile::RealField")
+	guard : p.hasStereotype("wspa::RealField")
 	
 	var minValue = p.getPropertyValue("RealField", "minValue");
 	var maxValue = p.getPropertyValue("RealField", "maxValue"); 
@@ -125,7 +123,7 @@ rule Property2RegularExpressionValidator
 	to v : mrtrm!RegularExpressionValidator
 	extends Property2Validator {
 	
-	guard : p.hasStereotype("WFVProfile::RegExField")
+	guard : p.hasStereotype("wspa::RegExField")
 	
 	v.expression = p.getPropertyValue("RegExField", "expression"); 
 	p.equivalent().validators.add(v);

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mrtrm:WebApplicacion xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mrtrm="http://www.example.org/mrtrm" name="Mi Ruta tu Ruta">
+  <features name="VehiculoFeature"/>
+  <features name="PostulacionFeature"/>
+  <features name="RutaFeature"/>
+  <features name="UsuarioFeature"/>
+</mrtrm:WebApplicacion>
