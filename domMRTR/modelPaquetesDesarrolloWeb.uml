@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_E1iuMED6EeerNZtXb-g8LQ" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Y26YgED_EeerNZtXb-g8LQ" name="WebApp">
+    <packagedElement xmi:type="uml:Package" xmi:id="_bK_7AED_EeerNZtXb-g8LQ" name="Controllers">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_-GkGAED_EeerNZtXb-g8LQ" client="_bK_7AED_EeerNZtXb-g8LQ" supplier="_vQg3wED_EeerNZtXb-g8LQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_dB5LMED_EeerNZtXb-g8LQ" name="Content"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fb7ksED_EeerNZtXb-g8LQ" name="Views">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_6lvDkED_EeerNZtXb-g8LQ" client="_fb7ksED_EeerNZtXb-g8LQ" supplier="_dB5LMED_EeerNZtXb-g8LQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_9c3BsED_EeerNZtXb-g8LQ" client="_fb7ksED_EeerNZtXb-g8LQ" supplier="_bK_7AED_EeerNZtXb-g8LQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_vQg3wED_EeerNZtXb-g8LQ" name="RemoteServices">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_yvHsoED_EeerNZtXb-g8LQ" client="_vQg3wED_EeerNZtXb-g8LQ" supplier="_p9k-gED_EeerNZtXb-g8LQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_l8LloED_EeerNZtXb-g8LQ" name="WebApiServices">
+    <packagedElement xmi:type="uml:Package" xmi:id="_nBV24ED_EeerNZtXb-g8LQ" name="Services"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_p9k-gED_EeerNZtXb-g8LQ" name="IServices">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_E1zlMEEAEeerNZtXb-g8LQ" client="_p9k-gED_EeerNZtXb-g8LQ" supplier="_nBV24ED_EeerNZtXb-g8LQ"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

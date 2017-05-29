@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_OTZtkEDrEeerNZtXb-g8LQ" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_zsOlMEDrEeerNZtXb-g8LQ" name="Cliente">
+    <packagedElement xmi:type="uml:Package" xmi:id="_PLRwwEDrEeerNZtXb-g8LQ" name="Presentacion">
+      <packagedElement xmi:type="uml:Package" xmi:id="_UgZbUEDrEeerNZtXb-g8LQ" name="VistasUI">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_ngqAMEDrEeerNZtXb-g8LQ" client="_UgZbUEDrEeerNZtXb-g8LQ" supplier="_WNIp8EDrEeerNZtXb-g8LQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_WNIp8EDrEeerNZtXb-g8LQ" name="Controladores">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_oRdyEEDrEeerNZtXb-g8LQ" client="_WNIp8EDrEeerNZtXb-g8LQ" supplier="_Xjzh8EDrEeerNZtXb-g8LQ"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_EgksIEDsEeerNZtXb-g8LQ" client="_WNIp8EDrEeerNZtXb-g8LQ" supplier="_frASkEDrEeerNZtXb-g8LQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Xjzh8EDrEeerNZtXb-g8LQ" name="AgenteDeServicio">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_LCCYkEDtEeerNZtXb-g8LQ" client="_Xjzh8EDrEeerNZtXb-g8LQ" supplier="_UrZ8AEDsEeerNZtXb-g8LQ"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Qjx0wEDrEeerNZtXb-g8LQ" name="Dominio">
+      <packagedElement xmi:type="uml:Package" xmi:id="_cmeKkEDrEeerNZtXb-g8LQ" name="EntidadesDeDominio"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_frASkEDrEeerNZtXb-g8LQ" name="ServiciosDeDominio">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_slsnYEDrEeerNZtXb-g8LQ" client="_frASkEDrEeerNZtXb-g8LQ" supplier="_cmeKkEDrEeerNZtXb-g8LQ"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_t6_mYEDrEeerNZtXb-g8LQ" client="_frASkEDrEeerNZtXb-g8LQ" supplier="_kGlGAEDrEeerNZtXb-g8LQ"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RnyPcEDrEeerNZtXb-g8LQ" name="Infraestructura">
+      <packagedElement xmi:type="uml:Package" xmi:id="_kGlGAEDrEeerNZtXb-g8LQ" name="AccesoADatos"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_N19HIEDsEeerNZtXb-g8LQ" name="ServidorDeAplicacion">
+    <packagedElement xmi:type="uml:Package" xmi:id="_UrZ8AEDsEeerNZtXb-g8LQ" name="CapaServiciosDistribuidos">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_G82r4EDtEeerNZtXb-g8LQ" client="_UrZ8AEDsEeerNZtXb-g8LQ" supplier="_YZ4Y4EDsEeerNZtXb-g8LQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_YZ4Y4EDsEeerNZtXb-g8LQ" name="CapaDeAplicacion">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ccbBQEDsEeerNZtXb-g8LQ" name="ServiciosDeAplicacion"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="__p40kEDsEeerNZtXb-g8LQ" client="_YZ4Y4EDsEeerNZtXb-g8LQ" supplier="_eqolQEDsEeerNZtXb-g8LQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_eqolQEDsEeerNZtXb-g8LQ" name="CapaDeDominio">
+      <packagedElement xmi:type="uml:Package" xmi:id="_g5ozcEDsEeerNZtXb-g8LQ" name="EntidadesDeDominio"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_iQJ6cEDsEeerNZtXb-g8LQ" name="ServiciosDeDominio">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_9_7NIEDsEeerNZtXb-g8LQ" client="_iQJ6cEDsEeerNZtXb-g8LQ" supplier="_g5ozcEDsEeerNZtXb-g8LQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_80R5YEDsEeerNZtXb-g8LQ" client="_eqolQEDsEeerNZtXb-g8LQ" supplier="_tZuP4EDsEeerNZtXb-g8LQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_tZuP4EDsEeerNZtXb-g8LQ" name="CapaDeDatos">
+      <packagedElement xmi:type="uml:Package" xmi:id="_veNQIEDsEeerNZtXb-g8LQ" name="Reposotorios">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_z2pQAEDsEeerNZtXb-g8LQ" client="_veNQIEDsEeerNZtXb-g8LQ" supplier="_yF_KsEDsEeerNZtXb-g8LQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_wf9BAEDsEeerNZtXb-g8LQ" name="AgentesDeServicio">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_0a2JQEDsEeerNZtXb-g8LQ" client="_wf9BAEDsEeerNZtXb-g8LQ" supplier="_veNQIEDsEeerNZtXb-g8LQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_yF_KsEDsEeerNZtXb-g8LQ" name="ModeloDeDatos"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

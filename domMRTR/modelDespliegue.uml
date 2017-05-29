@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ufKcsEDmEeer8dXpnzVjVw" name="RootElement">
+  <packagedElement xmi:type="uml:Node" xmi:id="_6XCCkEDmEeer8dXpnzVjVw" name="WebServer">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Nk1Fc0DtEeekR64bXEtA-A" name="sqlserver" type="_-u2XYEDmEeer8dXpnzVjVw" association="_Nk1FcEDtEeekR64bXEtA-A"/>
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_2IHY0EDrEeekR64bXEtA-A" name="Html Pages"/>
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_5VFEEEDrEeekR64bXEtA-A" name="Controllers JS"/>
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_Hl43QEDsEeekR64bXEtA-A" name="Remote Services JS"/>
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_4echkEDsEeekR64bXEtA-A" name=".Net Framework"/>
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_mR2DsEDrEeekR64bXEtA-A" name="Entity Framework"/>
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_giEdcEDrEeekR64bXEtA-A" name="WebApi Services"/>
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="__FOL0EDtEeekR64bXEtA-A" name="CSS styles"/>
+    <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_5lBaAEDqEeekR64bXEtA-A" name="Internet Information Services"/>
+    <nestedNode xmi:type="uml:Node" xmi:id="_TLFRYEDvEeekR64bXEtA-A" name="Web App"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Node" xmi:id="_-u2XYEDmEeer8dXpnzVjVw" name="SqlServer">
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_P0ydQEDqEeekR64bXEtA-A" name="Base de datos "/>
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_YZzgYEDsEeekR64bXEtA-A" name="Tabla"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_tvXaoEDqEeekR64bXEtA-A" name="PC">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_M2TLg0DtEeekR64bXEtA-A" name="webserver" type="_6XCCkEDmEeer8dXpnzVjVw" association="_M2TLgEDtEeekR64bXEtA-A"/>
+    <nestedClassifier xmi:type="uml:ExecutionEnvironment" xmi:id="_x9SzoEDqEeekR64bXEtA-A" name="WebExplorer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_w83mgEDsEeekR64bXEtA-A" name="Utiliza" client="_P0ydQEDqEeekR64bXEtA-A" supplier="_YZzgYEDsEeekR64bXEtA-A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_6Trk4EDsEeekR64bXEtA-A" name="Utiliza" client="_giEdcEDrEeekR64bXEtA-A" supplier="_4echkEDsEeekR64bXEtA-A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_6peOsEDsEeekR64bXEtA-A" name="Utiliza" client="_4echkEDsEeekR64bXEtA-A" supplier="_mR2DsEDrEeekR64bXEtA-A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_GAqwcEDtEeekR64bXEtA-A" name="Utiliza" client="_mR2DsEDrEeekR64bXEtA-A" supplier="_P0ydQEDqEeekR64bXEtA-A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_KYly8EDtEeekR64bXEtA-A" name="Utiliiza" client="_x9SzoEDqEeekR64bXEtA-A" supplier="_5lBaAEDqEeekR64bXEtA-A"/>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_M2TLgEDtEeekR64bXEtA-A" name="TCP/IP" memberEnd="_M2TLg0DtEeekR64bXEtA-A _M2TLhEDtEeekR64bXEtA-A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_M2TLgUDtEeekR64bXEtA-A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_M2TLgkDtEeekR64bXEtA-A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_M2TLhEDtEeekR64bXEtA-A" name="pc" type="_tvXaoEDqEeekR64bXEtA-A" association="_M2TLgEDtEeekR64bXEtA-A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_Nk1FcEDtEeekR64bXEtA-A" name="TCP/IP" memberEnd="_Nk1Fc0DtEeekR64bXEtA-A _Nk1FdEDtEeekR64bXEtA-A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Nk1FcUDtEeekR64bXEtA-A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Nk1FckDtEeekR64bXEtA-A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Nk1FdEDtEeekR64bXEtA-A" name="webserver" type="_6XCCkEDmEeer8dXpnzVjVw" association="_Nk1FcEDtEeekR64bXEtA-A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_1V608EDtEeekR64bXEtA-A" name="Utiliza" client="_Hl43QEDsEeekR64bXEtA-A" supplier="_giEdcEDrEeekR64bXEtA-A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_BFNtoEDuEeekR64bXEtA-A" name="Utiliza" client="_2IHY0EDrEeekR64bXEtA-A" supplier="__FOL0EDtEeekR64bXEtA-A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_JNYuoEDuEeekR64bXEtA-A" name="deployment" client="_giEdcEDrEeekR64bXEtA-A" supplier="_5lBaAEDqEeekR64bXEtA-A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Gi3MoEDvEeekR64bXEtA-A" name="Utiliza" client="_2IHY0EDrEeekR64bXEtA-A" supplier="_5VFEEEDrEeekR64bXEtA-A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_uOSZAEDvEeekR64bXEtA-A" name="deployment" client="_TLFRYEDvEeekR64bXEtA-A" supplier="_5lBaAEDqEeekR64bXEtA-A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_6M8t8EDwEeekR64bXEtA-A" name="Utiliza" client="_5VFEEEDrEeekR64bXEtA-A" supplier="_Hl43QEDsEeekR64bXEtA-A"/>
+</uml:Model>

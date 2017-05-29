@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9EL6cEDoEeerNZtXb-g8LQ" name="RootElement">
+  <packagedElement xmi:type="uml:Package" xmi:id="_-rfPcEDoEeerNZtXb-g8LQ" name="Dashboard">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="__u3GEEDqEeerNZtXb-g8LQ" client="_-rfPcEDoEeerNZtXb-g8LQ" supplier="_K-mm4EDpEeerNZtXb-g8LQ"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_AW0d8EDrEeerNZtXb-g8LQ" client="_-rfPcEDoEeerNZtXb-g8LQ" supplier="_OVDlUEDpEeerNZtXb-g8LQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_K-mm4EDpEeerNZtXb-g8LQ" name="Mis Premios">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_-kUlkEDqEeerNZtXb-g8LQ" client="_K-mm4EDpEeerNZtXb-g8LQ" supplier="_L70dEEDpEeerNZtXb-g8LQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_L70dEEDpEeerNZtXb-g8LQ" name="Mi Ruta">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_2bbL0EDqEeerNZtXb-g8LQ" client="_L70dEEDpEeerNZtXb-g8LQ" supplier="_PiiFEEDpEeerNZtXb-g8LQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NWqDYEDpEeerNZtXb-g8LQ" name="Tu Ruta">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_-_ZYAEDqEeerNZtXb-g8LQ" client="_NWqDYEDpEeerNZtXb-g8LQ" supplier="_L70dEEDpEeerNZtXb-g8LQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_OVDlUEDpEeerNZtXb-g8LQ" name="Mi Rastro">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_A9xJMEDrEeerNZtXb-g8LQ" client="_OVDlUEDpEeerNZtXb-g8LQ" supplier="_L70dEEDpEeerNZtXb-g8LQ"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Bhm2EEDrEeerNZtXb-g8LQ" client="_OVDlUEDpEeerNZtXb-g8LQ" supplier="_NWqDYEDpEeerNZtXb-g8LQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_PiiFEEDpEeerNZtXb-g8LQ" name="Seguridad"/>
+</uml:Model>
