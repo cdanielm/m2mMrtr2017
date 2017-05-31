@@ -2669,3 +2669,46 @@ org.eclipse.swt.SWTException: Widget is disposed
 
 !ENTRY org.eclipse.epsilon.common.dt 1 0 2017-05-30 22:43:30.395
 !MESSAGE Metamodel \mrtrm\model\mrtrm.ecore registered successfully
+!SESSION 2017-05-31 17:28:30.319 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 17:28:43.741
+!MESSAGE Both 'org.obeonetwork.dsl.bpmn2' and 'org.eclipse.bpmn2' register a package for 'http://www.omg.org/spec/BPMN/20100524/MODEL-XMI'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 17:28:43.804
+!MESSAGE Both 'org.obeonetwork.dsl.bpmn2' and 'org.eclipse.bpmn2' register a package for 'http://www.omg.org/spec/BPMN/20100524/DI-XMI'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 17:28:43.804
+!MESSAGE Both 'org.obeonetwork.dsl.bpmn2' and 'org.eclipse.bpmn2' register a package for 'http://www.omg.org/spec/DD/20100524/DI-XMI'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 17:28:43.820
+!MESSAGE Both 'org.obeonetwork.dsl.bpmn2' and 'org.eclipse.bpmn2' register a package for 'http://www.omg.org/spec/DD/20100524/DC-XMI'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 17:28:43.945
+!MESSAGE Both 'org.eclipse.papyrus.infra.core.sashwindows.di' and 'org.obeonetwork.dsl.bpmn2' register an extension parser for 'di'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 17:28:43.945
+!MESSAGE Both 'org.obeonetwork.dsl.bpmn2' and 'org.eclipse.bpmn2' register an extension parser for 'bpmn2'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 17:28:43.960
+!MESSAGE Both 'org.obeonetwork.dsl.bpmn2' and 'org.eclipse.bpmn2' register an extension parser for 'di'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 17:28:43.960
+!MESSAGE Both 'org.obeonetwork.dsl.bpmn2' and 'org.eclipse.bpmn2' register an extension parser for 'dc'
+
+!ENTRY org.eclipse.papyrus.infra.types.core 1 0 2017-05-31 17:29:44.168
+!MESSAGE org.eclipse.papyrus.gmfdiag.common.Diagram is already registred elementtype but it is not binded yet. It has been binded to Papyrus context. 
+
+!ENTRY org.eclipse.papyrus.infra.types.core 1 0 2017-05-31 17:29:44.465
+!MESSAGE org.eclipse.gmf.runtime.emf.type.core.default is already registred elementtype but it is not binded yet. It has been binded to Papyrus context. 
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-05-31 17:32:11.169
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\cdani'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
