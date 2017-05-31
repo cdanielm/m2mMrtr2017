@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<mrtrm:WebApplicacion xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mrtrm="http://www.example.org/mrtrm" name="Mi Ruta tu Ruta">
-  <features name="VehiculoFeature">
-    <componentsUI name="NombreComponentUI"/>
-    <componentsUI name="PlacaComponentUI"/>
-    <componentsUI name="ColorComponentUI"/>
-    <componentsUI name="TipoVehiculoComponentUI"/>
-  </features>
+<mrtrm:WebApplication xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mrtrm="http://www.example.org/mrtrm" name="Mi Ruta tu Ruta">
   <features name="PostulacionFeature">
     <componentsUI name="FechaPostulacionComponentUI"/>
     <componentsUI name="EstadoPostulacionComponentUI"/>
@@ -26,4 +20,11 @@
     <componentsUI name="NombreComponentUI"/>
     <componentsUI name="contrasenaComponentUI"/>
   </features>
-</mrtrm:WebApplicacion>
+  <features xsi:type="mrtrm:Form" name="Veh&#xed;culo">
+    <componentsUI name="NombreComponentUI"/>
+    <componentsUI name="PlacaComponentUI"/>
+    <componentsUI name="ColorComponentUI"/>
+    <componentsUI name="TipoVehiculoComponentUI"/>
+  </features>
+  <features xsi:type="mrtrm:Lista" name="Veh&#xed;culo"/>
+</mrtrm:WebApplication>

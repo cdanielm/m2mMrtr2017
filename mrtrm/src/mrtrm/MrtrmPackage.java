@@ -58,14 +58,14 @@ public interface MrtrmPackage extends EPackage {
 	MrtrmPackage eINSTANCE = mrtrm.impl.MrtrmPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link mrtrm.impl.WebApplicacionImpl <em>Web Applicacion</em>}' class.
+	 * The meta object id for the '{@link mrtrm.impl.WebApplicationImpl <em>Web Application</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see mrtrm.impl.WebApplicacionImpl
-	 * @see mrtrm.impl.MrtrmPackageImpl#getWebApplicacion()
+	 * @see mrtrm.impl.WebApplicationImpl
+	 * @see mrtrm.impl.MrtrmPackageImpl#getWebApplication()
 	 * @generated
 	 */
-	int WEB_APPLICACION = 0;
+	int WEB_APPLICATION = 0;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -74,7 +74,7 @@ public interface MrtrmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_APPLICACION__NAME = 0;
+	int WEB_APPLICATION__NAME = 0;
 
 	/**
 	 * The feature id for the '<em><b>Features</b></em>' containment reference list.
@@ -83,25 +83,25 @@ public interface MrtrmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_APPLICACION__FEATURES = 1;
+	int WEB_APPLICATION__FEATURES = 1;
 
 	/**
-	 * The number of structural features of the '<em>Web Applicacion</em>' class.
+	 * The number of structural features of the '<em>Web Application</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_APPLICACION_FEATURE_COUNT = 2;
+	int WEB_APPLICATION_FEATURE_COUNT = 2;
 
 	/**
-	 * The number of operations of the '<em>Web Applicacion</em>' class.
+	 * The number of operations of the '<em>Web Application</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_APPLICACION_OPERATION_COUNT = 0;
+	int WEB_APPLICATION_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link mrtrm.impl.FeatureImpl <em>Feature</em>}' class.
@@ -205,14 +205,14 @@ public interface MrtrmPackage extends EPackage {
 	int ACTION_SERVICE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link mrtrm.impl.ListImpl <em>List</em>}' class.
+	 * The meta object id for the '{@link mrtrm.impl.ListaImpl <em>Lista</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see mrtrm.impl.ListImpl
-	 * @see mrtrm.impl.MrtrmPackageImpl#getList()
+	 * @see mrtrm.impl.ListaImpl
+	 * @see mrtrm.impl.MrtrmPackageImpl#getLista()
 	 * @generated
 	 */
-	int LIST = 3;
+	int LISTA = 3;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -221,7 +221,7 @@ public interface MrtrmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIST__NAME = FEATURE__NAME;
+	int LISTA__NAME = FEATURE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Action Services</b></em>' reference.
@@ -230,7 +230,7 @@ public interface MrtrmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIST__ACTION_SERVICES = FEATURE__ACTION_SERVICES;
+	int LISTA__ACTION_SERVICES = FEATURE__ACTION_SERVICES;
 
 	/**
 	 * The feature id for the '<em><b>Components UI</b></em>' containment reference list.
@@ -239,25 +239,25 @@ public interface MrtrmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIST__COMPONENTS_UI = FEATURE__COMPONENTS_UI;
+	int LISTA__COMPONENTS_UI = FEATURE__COMPONENTS_UI;
 
 	/**
-	 * The number of structural features of the '<em>List</em>' class.
+	 * The number of structural features of the '<em>Lista</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LIST_FEATURE_COUNT = FEATURE_FEATURE_COUNT + 0;
+	int LISTA_FEATURE_COUNT = FEATURE_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>List</em>' class.
+	 * The number of operations of the '<em>Lista</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LIST_OPERATION_COUNT = FEATURE_OPERATION_COUNT + 0;
+	int LISTA_OPERATION_COUNT = FEATURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link mrtrm.impl.FormImpl <em>Form</em>}' class.
@@ -493,36 +493,36 @@ public interface MrtrmPackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link mrtrm.WebApplicacion <em>Web Applicacion</em>}'.
+	 * Returns the meta object for class '{@link mrtrm.WebApplication <em>Web Application</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Web Applicacion</em>'.
-	 * @see mrtrm.WebApplicacion
+	 * @return the meta object for class '<em>Web Application</em>'.
+	 * @see mrtrm.WebApplication
 	 * @generated
 	 */
-	EClass getWebApplicacion();
+	EClass getWebApplication();
 
 	/**
-	 * Returns the meta object for the attribute '{@link mrtrm.WebApplicacion#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link mrtrm.WebApplication#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see mrtrm.WebApplicacion#getName()
-	 * @see #getWebApplicacion()
+	 * @see mrtrm.WebApplication#getName()
+	 * @see #getWebApplication()
 	 * @generated
 	 */
-	EAttribute getWebApplicacion_Name();
+	EAttribute getWebApplication_Name();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link mrtrm.WebApplicacion#getFeatures <em>Features</em>}'.
+	 * Returns the meta object for the containment reference list '{@link mrtrm.WebApplication#getFeatures <em>Features</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Features</em>'.
-	 * @see mrtrm.WebApplicacion#getFeatures()
-	 * @see #getWebApplicacion()
+	 * @see mrtrm.WebApplication#getFeatures()
+	 * @see #getWebApplication()
 	 * @generated
 	 */
-	EReference getWebApplicacion_Features();
+	EReference getWebApplication_Features();
 
 	/**
 	 * Returns the meta object for class '{@link mrtrm.Feature <em>Feature</em>}'.
@@ -600,14 +600,14 @@ public interface MrtrmPackage extends EPackage {
 	EReference getActionService_Parameters();
 
 	/**
-	 * Returns the meta object for class '{@link mrtrm.List <em>List</em>}'.
+	 * Returns the meta object for class '{@link mrtrm.Lista <em>Lista</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>List</em>'.
-	 * @see mrtrm.List
+	 * @return the meta object for class '<em>Lista</em>'.
+	 * @see mrtrm.Lista
 	 * @generated
 	 */
-	EClass getList();
+	EClass getLista();
 
 	/**
 	 * Returns the meta object for class '{@link mrtrm.Form <em>Form</em>}'.
@@ -749,14 +749,14 @@ public interface MrtrmPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link mrtrm.impl.WebApplicacionImpl <em>Web Applicacion</em>}' class.
+		 * The meta object literal for the '{@link mrtrm.impl.WebApplicationImpl <em>Web Application</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see mrtrm.impl.WebApplicacionImpl
-		 * @see mrtrm.impl.MrtrmPackageImpl#getWebApplicacion()
+		 * @see mrtrm.impl.WebApplicationImpl
+		 * @see mrtrm.impl.MrtrmPackageImpl#getWebApplication()
 		 * @generated
 		 */
-		EClass WEB_APPLICACION = eINSTANCE.getWebApplicacion();
+		EClass WEB_APPLICATION = eINSTANCE.getWebApplication();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -764,7 +764,7 @@ public interface MrtrmPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute WEB_APPLICACION__NAME = eINSTANCE.getWebApplicacion_Name();
+		EAttribute WEB_APPLICATION__NAME = eINSTANCE.getWebApplication_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Features</b></em>' containment reference list feature.
@@ -772,7 +772,7 @@ public interface MrtrmPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEB_APPLICACION__FEATURES = eINSTANCE.getWebApplicacion_Features();
+		EReference WEB_APPLICATION__FEATURES = eINSTANCE.getWebApplication_Features();
 
 		/**
 		 * The meta object literal for the '{@link mrtrm.impl.FeatureImpl <em>Feature</em>}' class.
@@ -835,14 +835,14 @@ public interface MrtrmPackage extends EPackage {
 		EReference ACTION_SERVICE__PARAMETERS = eINSTANCE.getActionService_Parameters();
 
 		/**
-		 * The meta object literal for the '{@link mrtrm.impl.ListImpl <em>List</em>}' class.
+		 * The meta object literal for the '{@link mrtrm.impl.ListaImpl <em>Lista</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see mrtrm.impl.ListImpl
-		 * @see mrtrm.impl.MrtrmPackageImpl#getList()
+		 * @see mrtrm.impl.ListaImpl
+		 * @see mrtrm.impl.MrtrmPackageImpl#getLista()
 		 * @generated
 		 */
-		EClass LIST = eINSTANCE.getList();
+		EClass LISTA = eINSTANCE.getLista();
 
 		/**
 		 * The meta object literal for the '{@link mrtrm.impl.FormImpl <em>Form</em>}' class.

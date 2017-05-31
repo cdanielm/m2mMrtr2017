@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:wspa="http:///schemas/wspa/_iNC2YEStEeeGqf24WzYKuA/8" xsi:schemaLocation="http:///schemas/wspa/_iNC2YEStEeeGqf24WzYKuA/8 /WebSinglePageAplicationModel/wspa.profile.uml#_iNIV8EStEeeGqf24WzYKuA">
+  <uml:Model xmi:id="_lLFjoEPjEee7W4sjT_6_FA" name="Mi Ruta tu Ruta" URI="">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_lSvDwEPjEee7W4sjT_6_FA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nXtMMEPjEee7W4sjT_6_FA" memberEnd="_nXwPgkPjEee7W4sjT_6_FA _nXtMM0PjEee7W4sjT_6_FA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nXtMMUPjEee7W4sjT_6_FA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nXtMMkPjEee7W4sjT_6_FA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_nXtMM0PjEee7W4sjT_6_FA" name="ruta" type="_nXwPgEPjEee7W4sjT_6_FA" association="_nXtMMEPjEee7W4sjT_6_FA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_nXuaUEPjEee7W4sjT_6_FA" client="_nXvBY0PjEee7W4sjT_6_FA" supplier="_nXvoekPjEee7W4sjT_6_FA"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_nXvBYEPjEee7W4sjT_6_FA" name="Estado">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nXvBYUPjEee7W4sjT_6_FA" name="Aceptada"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nXvBYkPjEee7W4sjT_6_FA" name="Rechazada"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nXvBY0PjEee7W4sjT_6_FA" name="Vehiculo">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXvBZEPjEee7W4sjT_6_FA" name="Nombre">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXvBZUPjEee7W4sjT_6_FA" name="Placa">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXvBZkPjEee7W4sjT_6_FA" name="Color">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXvBZ0PjEee7W4sjT_6_FA" name="TipoVehiculo" type="_nXvoekPjEee7W4sjT_6_FA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nXvBaEPjEee7W4sjT_6_FA" memberEnd="_nXwPgUPjEee7W4sjT_6_FA _nXvBa0PjEee7W4sjT_6_FA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nXvBaUPjEee7W4sjT_6_FA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nXvBakPjEee7W4sjT_6_FA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_nXvBa0PjEee7W4sjT_6_FA" name="rutas" type="_nXwPgEPjEee7W4sjT_6_FA" association="_nXvBaEPjEee7W4sjT_6_FA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nXvBbEPjEee7W4sjT_6_FA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nXvBbUPjEee7W4sjT_6_FA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_nXvocEPjEee7W4sjT_6_FA" client="_nXvod0PjEee7W4sjT_6_FA" supplier="_nXvBYEPjEee7W4sjT_6_FA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nXvocUPjEee7W4sjT_6_FA" memberEnd="_nXwPlkPjEee7W4sjT_6_FA _nXvodEPjEee7W4sjT_6_FA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nXvockPjEee7W4sjT_6_FA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nXvoc0PjEee7W4sjT_6_FA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_nXvodEPjEee7W4sjT_6_FA" name="usuario" type="_nXwPkkPjEee7W4sjT_6_FA" association="_nXvocUPjEee7W4sjT_6_FA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nXvodUPjEee7W4sjT_6_FA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nXvodkPjEee7W4sjT_6_FA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nXvod0PjEee7W4sjT_6_FA" name="Postulacion">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXvoeEPjEee7W4sjT_6_FA" name="FechaPostulacion">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXvoeUPjEee7W4sjT_6_FA" name="EstadoPostulacion" type="_nXvBYEPjEee7W4sjT_6_FA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_nXvoekPjEee7W4sjT_6_FA" name="TipoVehiculo">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nXvoe0PjEee7W4sjT_6_FA" name="Moto"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nXvofEPjEee7W4sjT_6_FA" name="Carro"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nXvofUPjEee7W4sjT_6_FA" memberEnd="_nXwPk0PjEee7W4sjT_6_FA _nXvogEPjEee7W4sjT_6_FA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nXvofkPjEee7W4sjT_6_FA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nXvof0PjEee7W4sjT_6_FA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_nXvogEPjEee7W4sjT_6_FA" name="usuario" type="_nXwPkkPjEee7W4sjT_6_FA" association="_nXvofUPjEee7W4sjT_6_FA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nXvogUPjEee7W4sjT_6_FA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nXvogkPjEee7W4sjT_6_FA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nXwPgEPjEee7W4sjT_6_FA" name="Ruta">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPgUPjEee7W4sjT_6_FA" name="vehiculo" type="_nXvBY0PjEee7W4sjT_6_FA" association="_nXvBaEPjEee7W4sjT_6_FA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPgkPjEee7W4sjT_6_FA" name="Pasajeros" type="_nXvod0PjEee7W4sjT_6_FA" association="_nXtMMEPjEee7W4sjT_6_FA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nXwPg0PjEee7W4sjT_6_FA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nXwPhEPjEee7W4sjT_6_FA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPhUPjEee7W4sjT_6_FA" name="Nombre">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPhkPjEee7W4sjT_6_FA" name="LongitudInicio" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPh0PjEee7W4sjT_6_FA" name="LatitudInicio">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPiEPjEee7W4sjT_6_FA" name="LongitudFin">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPiUPjEee7W4sjT_6_FA" name="LatitudFin">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPikPjEee7W4sjT_6_FA" name="CupoTotal">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPi0PjEee7W4sjT_6_FA" name="FechaEjecucion">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPjEPjEee7W4sjT_6_FA" name="Descripcion">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPjUPjEee7W4sjT_6_FA" name="Condiciones">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nXwPjkPjEee7W4sjT_6_FA" memberEnd="_nXwPmUPjEee7W4sjT_6_FA _nXwPkUPjEee7W4sjT_6_FA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nXwPj0PjEee7W4sjT_6_FA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nXwPkEPjEee7W4sjT_6_FA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_nXwPkUPjEee7W4sjT_6_FA" name="usuario" type="_nXwPkkPjEee7W4sjT_6_FA" association="_nXwPjkPjEee7W4sjT_6_FA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nXwPkkPjEee7W4sjT_6_FA" name="Usuario">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPk0PjEee7W4sjT_6_FA" name="vehiculos" type="_nXvBY0PjEee7W4sjT_6_FA" association="_nXvofUPjEee7W4sjT_6_FA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nXwPlEPjEee7W4sjT_6_FA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nXwPlUPjEee7W4sjT_6_FA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPlkPjEee7W4sjT_6_FA" name="ruta" type="_nXwPgEPjEee7W4sjT_6_FA" association="_nXvocUPjEee7W4sjT_6_FA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nXwPl0PjEee7W4sjT_6_FA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nXwPmEPjEee7W4sjT_6_FA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPmUPjEee7W4sjT_6_FA" name="postulaciones" type="_nXvod0PjEee7W4sjT_6_FA" association="_nXwPjkPjEee7W4sjT_6_FA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nXwPmkPjEee7W4sjT_6_FA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nXwPm0PjEee7W4sjT_6_FA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPnEPjEee7W4sjT_6_FA" name="Email">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPnUPjEee7W4sjT_6_FA" name="Nombre">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXwPnkPjEee7W4sjT_6_FA" name="contrasena">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lSlSwEPjEee7W4sjT_6_FA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6fdkoEWuEeeSXZH0AgKHlw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6fdkoUWuEeeSXZH0AgKHlw" key="Version" value="0.0.9"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6fdkokWuEeeSXZH0AgKHlw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6fdko0WuEeeSXZH0AgKHlw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6fdkpEWuEeeSXZH0AgKHlw" key="Date" value="2017-05-29"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6fdkpUWuEeeSXZH0AgKHlw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lSlSwUPjEee7W4sjT_6_FA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="/WebSinglePageAplicationModel/wspa.profile.uml#_iNIV8EStEeeGqf24WzYKuA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="/WebSinglePageAplicationModel/wspa.profile.uml#_EjJ-QEPaEeeEL_ugq4HVuw"/>
+    </profileApplication>
+  </uml:Model>
+  <wspa:WebSinglePageAplication xmi:id="_p70HsEPjEee7W4sjT_6_FA" base_Model="_lLFjoEPjEee7W4sjT_6_FA" name="MirutaTuRuta"/>
+  <wspa:Feature xmi:id="_jOamIEPkEee7W4sjT_6_FA" base_Class="_nXwPkkPjEee7W4sjT_6_FA"/>
+  <wspa:Feature xmi:id="_6tyaoEPkEee7W4sjT_6_FA" base_Class="_nXwPgEPjEee7W4sjT_6_FA"/>
+  <wspa:Feature xmi:id="_TIP-YEPlEee7W4sjT_6_FA" base_Class="_nXvod0PjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_Bmo24EPnEee7W4sjT_6_FA" base_Property="_nXvoeEPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_DlSU4EPnEee7W4sjT_6_FA" base_Property="_nXvoeUPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_O52ZYEPnEee7W4sjT_6_FA" base_Property="_nXwPhUPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_PygfsEPnEee7W4sjT_6_FA" base_Property="_nXwPhkPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_QoYXwEPnEee7W4sjT_6_FA" base_Property="_nXwPh0PjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_Rd978EPnEee7W4sjT_6_FA" base_Property="_nXwPiEPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_SUkMwEPnEee7W4sjT_6_FA" base_Property="_nXwPiUPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_TFQC0EPnEee7W4sjT_6_FA" base_Property="_nXwPikPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_T9_osEPnEee7W4sjT_6_FA" base_Property="_nXwPi0PjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_U29RAEPnEee7W4sjT_6_FA" base_Property="_nXwPjEPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_V2FLsEPnEee7W4sjT_6_FA" base_Property="_nXwPjUPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_W0QrMEPnEee7W4sjT_6_FA" base_Property="_nXwPnEPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_Xxg9oEPnEee7W4sjT_6_FA" base_Property="_nXwPnUPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_Yuj0sEPnEee7W4sjT_6_FA" base_Property="_nXwPnkPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_aBnYAEPnEee7W4sjT_6_FA" base_Property="_nXvBZEPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_a4_r8EPnEee7W4sjT_6_FA" base_Property="_nXvBZUPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_e4zwcEPnEee7W4sjT_6_FA" base_Property="_nXvBZkPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_gP3qAEPnEee7W4sjT_6_FA" base_Property="_nXvBZ0PjEee7W4sjT_6_FA"/>
+  <wspa:Form xmi:id="_PBxqwEWyEeeSXZH0AgKHlw" base_Class="_nXvBY0PjEee7W4sjT_6_FA" name="Vehículo"/>
+  <wspa:List xmi:id="_5yUN8EWyEeeSXZH0AgKHlw" base_Class="_nXvBY0PjEee7W4sjT_6_FA"/>
+</xmi:XMI>

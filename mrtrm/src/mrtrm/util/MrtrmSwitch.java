@@ -66,9 +66,9 @@ public class MrtrmSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case MrtrmPackage.WEB_APPLICACION: {
-				WebApplicacion webApplicacion = (WebApplicacion)theEObject;
-				T result = caseWebApplicacion(webApplicacion);
+			case MrtrmPackage.WEB_APPLICATION: {
+				WebApplication webApplication = (WebApplication)theEObject;
+				T result = caseWebApplication(webApplication);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -84,10 +84,10 @@ public class MrtrmSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case MrtrmPackage.LIST: {
-				List list = (List)theEObject;
-				T result = caseList(list);
-				if (result == null) result = caseFeature(list);
+			case MrtrmPackage.LISTA: {
+				Lista lista = (Lista)theEObject;
+				T result = caseLista(lista);
+				if (result == null) result = caseFeature(lista);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -122,17 +122,17 @@ public class MrtrmSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Web Applicacion</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Web Application</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Web Applicacion</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Web Application</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseWebApplicacion(WebApplicacion object) {
+	public T caseWebApplication(WebApplication object) {
 		return null;
 	}
 
@@ -167,17 +167,17 @@ public class MrtrmSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>List</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Lista</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>List</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Lista</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseList(List object) {
+	public T caseLista(Lista object) {
 		return null;
 	}
 

@@ -12,9 +12,9 @@
       <genEnumLiterals ecoreEnumLiteral="mrtrm.ecore#//ComponentUIType/TABLE"/>
       <genEnumLiterals ecoreEnumLiteral="mrtrm.ecore#//ComponentUIType/DATE"/>
     </genEnums>
-    <genClasses ecoreClass="mrtrm.ecore#//WebApplicacion">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//WebApplicacion/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mrtrm.ecore#//WebApplicacion/features"/>
+    <genClasses ecoreClass="mrtrm.ecore#//WebApplication">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//WebApplication/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mrtrm.ecore#//WebApplication/features"/>
     </genClasses>
     <genClasses ecoreClass="mrtrm.ecore#//Feature">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//Feature/name"/>
@@ -25,7 +25,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//ActionService/action"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mrtrm.ecore#//ActionService/parameters"/>
     </genClasses>
-    <genClasses ecoreClass="mrtrm.ecore#//List"/>
+    <genClasses ecoreClass="mrtrm.ecore#//Lista"/>
     <genClasses ecoreClass="mrtrm.ecore#//Form"/>
     <genClasses ecoreClass="mrtrm.ecore#//Detail"/>
     <genClasses ecoreClass="mrtrm.ecore#//ComponentUI">

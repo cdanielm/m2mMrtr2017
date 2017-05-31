@@ -1,7 +1,7 @@
 // Create the root element of the target model
 rule Model2WebApp
 	transform m : uml!Model
-	to w : mrtrm!WebApplicacion {
+	to w : mrtrm!WebApplication {
 	
 	guard : m.hasStereotype("wspa::WebSinglePageAplication")
 	
@@ -20,6 +20,46 @@ rule Class2Feature
 		f.name = nameValue;
 	} else {
 		f.name = c.name + "Feature";
+	}
+	
+	//f.title = c.getPropertyValue("Form", "name");
+	c.namespace.equivalent().features.add(f);
+	
+ 	c.namespace.name.println();
+ 	c.name.println();
+}
+
+rule Class2Form
+	transform c : uml!Class
+	to f : mrtrm!Form {
+	
+	guard : c.hasStereotype("wspa::Form") 
+	
+	var nameValue = c.getPropertyValue("Form","name").asString(); 
+	if(nameValue.length() > 0) {
+		f.name = nameValue;
+	} else {
+		f.name = c.name + "Formulario";
+	}
+	
+	//f.title = c.getPropertyValue("Form", "name");
+	c.namespace.equivalent().features.add(f);
+	
+ 	c.namespace.name.println();
+ 	c.name.println();
+}
+
+rule Class2List
+	transform c : uml!Class
+	to f : mrtrm!Lista {
+	
+	guard : c.hasStereotype("wspa::List") 
+	
+	var nameValue = c.getPropertyValue("Lista","name").asString(); 
+	if(nameValue.length() > 0) {
+		f.name = nameValue;
+	} else {
+		f.name = c.name + "Lista";
 	}
 	
 	//f.title = c.getPropertyValue("Form", "name");

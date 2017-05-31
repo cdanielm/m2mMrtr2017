@@ -8,12 +8,11 @@ import mrtrm.ComponentUIType;
 import mrtrm.Detail;
 import mrtrm.Feature;
 import mrtrm.Form;
-import mrtrm.List;
+import mrtrm.Lista;
 import mrtrm.MrtrmFactory;
 import mrtrm.MrtrmPackage;
 import mrtrm.Parameter;
-import mrtrm.WebApplicacion;
-
+import mrtrm.WebApplication;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
@@ -34,7 +33,7 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass webApplicacionEClass = null;
+	private EClass webApplicationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -55,7 +54,7 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass listEClass = null;
+	private EClass listaEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -158,8 +157,8 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getWebApplicacion() {
-		return webApplicacionEClass;
+	public EClass getWebApplication() {
+		return webApplicationEClass;
 	}
 
 	/**
@@ -167,8 +166,8 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWebApplicacion_Name() {
-		return (EAttribute)webApplicacionEClass.getEStructuralFeatures().get(0);
+	public EAttribute getWebApplication_Name() {
+		return (EAttribute)webApplicationEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -176,8 +175,8 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getWebApplicacion_Features() {
-		return (EReference)webApplicacionEClass.getEStructuralFeatures().get(1);
+	public EReference getWebApplication_Features() {
+		return (EReference)webApplicationEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -248,8 +247,8 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getList() {
-		return listEClass;
+	public EClass getLista() {
+		return listaEClass;
 	}
 
 	/**
@@ -379,9 +378,9 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 		isCreated = true;
 
 		// Create classes and their features
-		webApplicacionEClass = createEClass(WEB_APPLICACION);
-		createEAttribute(webApplicacionEClass, WEB_APPLICACION__NAME);
-		createEReference(webApplicacionEClass, WEB_APPLICACION__FEATURES);
+		webApplicationEClass = createEClass(WEB_APPLICATION);
+		createEAttribute(webApplicationEClass, WEB_APPLICATION__NAME);
+		createEReference(webApplicationEClass, WEB_APPLICATION__FEATURES);
 
 		featureEClass = createEClass(FEATURE);
 		createEAttribute(featureEClass, FEATURE__NAME);
@@ -392,7 +391,7 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 		createEAttribute(actionServiceEClass, ACTION_SERVICE__ACTION);
 		createEReference(actionServiceEClass, ACTION_SERVICE__PARAMETERS);
 
-		listEClass = createEClass(LIST);
+		listaEClass = createEClass(LISTA);
 
 		formEClass = createEClass(FORM);
 
@@ -440,14 +439,14 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		listEClass.getESuperTypes().add(this.getFeature());
+		listaEClass.getESuperTypes().add(this.getFeature());
 		formEClass.getESuperTypes().add(this.getFeature());
 		detailEClass.getESuperTypes().add(this.getFeature());
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(webApplicacionEClass, WebApplicacion.class, "WebApplicacion", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getWebApplicacion_Name(), ecorePackage.getEString(), "name", null, 0, 1, WebApplicacion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getWebApplicacion_Features(), this.getFeature(), null, "features", null, 0, -1, WebApplicacion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(webApplicationEClass, WebApplication.class, "WebApplication", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getWebApplication_Name(), ecorePackage.getEString(), "name", null, 0, 1, WebApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getWebApplication_Features(), this.getFeature(), null, "features", null, 0, -1, WebApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(featureEClass, Feature.class, "Feature", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getFeature_Name(), ecorePackage.getEString(), "name", null, 0, 1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -458,7 +457,7 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 		initEAttribute(getActionService_Action(), ecorePackage.getEString(), "action", null, 0, 1, ActionService.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getActionService_Parameters(), this.getParameter(), null, "parameters", null, 0, -1, ActionService.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(listEClass, List.class, "List", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(listaEClass, Lista.class, "Lista", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(formEClass, Form.class, "Form", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

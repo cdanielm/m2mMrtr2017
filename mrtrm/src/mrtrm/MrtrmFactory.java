@@ -22,13 +22,13 @@ public interface MrtrmFactory extends EFactory {
 	MrtrmFactory eINSTANCE = mrtrm.impl.MrtrmFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Web Applicacion</em>'.
+	 * Returns a new object of class '<em>Web Application</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Web Applicacion</em>'.
+	 * @return a new object of class '<em>Web Application</em>'.
 	 * @generated
 	 */
-	WebApplicacion createWebApplicacion();
+	WebApplication createWebApplication();
 
 	/**
 	 * Returns a new object of class '<em>Feature</em>'.
@@ -49,13 +49,13 @@ public interface MrtrmFactory extends EFactory {
 	ActionService createActionService();
 
 	/**
-	 * Returns a new object of class '<em>List</em>'.
+	 * Returns a new object of class '<em>Lista</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>List</em>'.
+	 * @return a new object of class '<em>Lista</em>'.
 	 * @generated
 	 */
-	List createList();
+	Lista createLista();
 
 	/**
 	 * Returns a new object of class '<em>Form</em>'.

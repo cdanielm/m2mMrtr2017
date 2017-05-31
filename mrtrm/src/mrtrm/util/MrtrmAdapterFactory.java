@@ -68,8 +68,8 @@ public class MrtrmAdapterFactory extends AdapterFactoryImpl {
 	protected MrtrmSwitch<Adapter> modelSwitch =
 		new MrtrmSwitch<Adapter>() {
 			@Override
-			public Adapter caseWebApplicacion(WebApplicacion object) {
-				return createWebApplicacionAdapter();
+			public Adapter caseWebApplication(WebApplication object) {
+				return createWebApplicationAdapter();
 			}
 			@Override
 			public Adapter caseFeature(Feature object) {
@@ -80,8 +80,8 @@ public class MrtrmAdapterFactory extends AdapterFactoryImpl {
 				return createActionServiceAdapter();
 			}
 			@Override
-			public Adapter caseList(List object) {
-				return createListAdapter();
+			public Adapter caseLista(Lista object) {
+				return createListaAdapter();
 			}
 			@Override
 			public Adapter caseForm(Form object) {
@@ -120,16 +120,16 @@ public class MrtrmAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link mrtrm.WebApplicacion <em>Web Applicacion</em>}'.
+	 * Creates a new adapter for an object of class '{@link mrtrm.WebApplication <em>Web Application</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see mrtrm.WebApplicacion
+	 * @see mrtrm.WebApplication
 	 * @generated
 	 */
-	public Adapter createWebApplicacionAdapter() {
+	public Adapter createWebApplicationAdapter() {
 		return null;
 	}
 
@@ -162,16 +162,16 @@ public class MrtrmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link mrtrm.List <em>List</em>}'.
+	 * Creates a new adapter for an object of class '{@link mrtrm.Lista <em>Lista</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see mrtrm.List
+	 * @see mrtrm.Lista
 	 * @generated
 	 */
-	public Adapter createListAdapter() {
+	public Adapter createListaAdapter() {
 		return null;
 	}
 

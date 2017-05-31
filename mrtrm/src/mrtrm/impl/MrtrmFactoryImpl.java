@@ -57,10 +57,10 @@ public class MrtrmFactoryImpl extends EFactoryImpl implements MrtrmFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case MrtrmPackage.WEB_APPLICACION: return createWebApplicacion();
+			case MrtrmPackage.WEB_APPLICATION: return createWebApplication();
 			case MrtrmPackage.FEATURE: return createFeature();
 			case MrtrmPackage.ACTION_SERVICE: return createActionService();
-			case MrtrmPackage.LIST: return createList();
+			case MrtrmPackage.LISTA: return createLista();
 			case MrtrmPackage.FORM: return createForm();
 			case MrtrmPackage.DETAIL: return createDetail();
 			case MrtrmPackage.COMPONENT_UI: return createComponentUI();
@@ -105,9 +105,9 @@ public class MrtrmFactoryImpl extends EFactoryImpl implements MrtrmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public WebApplicacion createWebApplicacion() {
-		WebApplicacionImpl webApplicacion = new WebApplicacionImpl();
-		return webApplicacion;
+	public WebApplication createWebApplication() {
+		WebApplicationImpl webApplication = new WebApplicationImpl();
+		return webApplication;
 	}
 
 	/**
@@ -135,9 +135,9 @@ public class MrtrmFactoryImpl extends EFactoryImpl implements MrtrmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public List createList() {
-		ListImpl list = new ListImpl();
-		return list;
+	public Lista createLista() {
+		ListaImpl lista = new ListaImpl();
+		return lista;
 	}
 
 	/**
