@@ -4,7 +4,7 @@
 
 .controller('[%=nombreFeature%]', function($scope, $cordovaSQLite) {
 
-  $scope.list[%=nombreFeature%] = function() {
+  $scope.[%=nombreFeature%] = function() {
     var query = "SELECT * FROM [%=nombreFeature%]";
     $cordovaSQLite.execute(db, query);
   }

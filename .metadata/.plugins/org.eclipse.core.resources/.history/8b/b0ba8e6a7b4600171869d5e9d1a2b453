@@ -37,18 +37,6 @@ for(feature in features){
 %]    
   });
 })
-[%
-for(feature in features){
-	var t : Template = TemplateFactory.load("controllerTemplate.egl");//cargar plantilla independiente para tabla
-	
-	//Configurar plantilla t
-	//asignarle variables y datos
-	t.populate("nombreApp",appRoot.name);
-	t.populate("feature",feature);
-	out.print(t.process());
-	
-}
-%]
 
 .controller('AccountController', function($scope, $cordovaSQLite) {
 

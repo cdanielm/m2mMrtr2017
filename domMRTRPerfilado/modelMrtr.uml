@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:wspa="http:///schemas/wspa/_iNC2YEStEeeGqf24WzYKuA/8" xsi:schemaLocation="http:///schemas/wspa/_iNC2YEStEeeGqf24WzYKuA/8 /WebSinglePageAplicationModel/wspa.profile.uml#_iNIV8EStEeeGqf24WzYKuA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:wspa="http:///schemas/wspa/_N6QwcEWvEeeSXZH0AgKHlw/9" xsi:schemaLocation="http:///schemas/wspa/_N6QwcEWvEeeSXZH0AgKHlw/9 /WebSinglePageAplicationModel/wspa.profile.uml#_N6Vo8EWvEeeSXZH0AgKHlw">
   <uml:Model xmi:id="_lLFjoEPjEee7W4sjT_6_FA" name="Mi Ruta tu Ruta" URI="">
     <packageImport xmi:id="_lSvDwEPjEee7W4sjT_6_FA">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -129,15 +129,15 @@
       </ownedAttribute>
     </packagedElement>
     <profileApplication xmi:id="_lSlSwEPjEee7W4sjT_6_FA">
-      <eAnnotations xmi:id="_6fdkoEWuEeeSXZH0AgKHlw" source="PapyrusVersion">
-        <details xmi:id="_6fdkoUWuEeeSXZH0AgKHlw" key="Version" value="0.0.9"/>
-        <details xmi:id="_6fdkokWuEeeSXZH0AgKHlw" key="Comment" value=""/>
-        <details xmi:id="_6fdko0WuEeeSXZH0AgKHlw" key="Copyright" value=""/>
-        <details xmi:id="_6fdkpEWuEeeSXZH0AgKHlw" key="Date" value="2017-05-29"/>
-        <details xmi:id="_6fdkpUWuEeeSXZH0AgKHlw" key="Author" value=""/>
+      <eAnnotations xmi:id="_Ye4E0EZWEeeIId0qyEuXsQ" source="PapyrusVersion">
+        <details xmi:id="_Ye4E0UZWEeeIId0qyEuXsQ" key="Version" value="0.0.10"/>
+        <details xmi:id="_Ye4E0kZWEeeIId0qyEuXsQ" key="Comment" value=""/>
+        <details xmi:id="_Ye4E00ZWEeeIId0qyEuXsQ" key="Copyright" value=""/>
+        <details xmi:id="_Ye4E1EZWEeeIId0qyEuXsQ" key="Date" value="2017-05-30"/>
+        <details xmi:id="_Ye4E1UZWEeeIId0qyEuXsQ" key="Author" value=""/>
       </eAnnotations>
       <eAnnotations xmi:id="_lSlSwUPjEee7W4sjT_6_FA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="/WebSinglePageAplicationModel/wspa.profile.uml#_iNIV8EStEeeGqf24WzYKuA"/>
+        <references xmi:type="ecore:EPackage" href="/WebSinglePageAplicationModel/wspa.profile.uml#_N6Vo8EWvEeeSXZH0AgKHlw"/>
       </eAnnotations>
       <appliedProfile href="/WebSinglePageAplicationModel/wspa.profile.uml#_EjJ-QEPaEeeEL_ugq4HVuw"/>
     </profileApplication>

@@ -1,0 +1,19 @@
+[%
+	var nombreFeature= feature.name;
+%]
+
+.controller('AccountController', function($scope, $cordovaSQLite) {
+
+  $scope.accounts = function() {
+    var query = "SELECT firstname, lastname FROM people";
+    $cordovaSQLite.execute(db, query);
+  }
+
+  $scope.addAccount = function(){
+    var query = "INSERT INTO people (firstname, lastname) VALUES (?, ?)";
+    $cordovaSQLite.execute(db, query, [$scope.firstnameText, $scope.lastnameText]);
+    $scope.firstnameText = '';
+    $scope.lastnameText = '';
+  }
+
+});

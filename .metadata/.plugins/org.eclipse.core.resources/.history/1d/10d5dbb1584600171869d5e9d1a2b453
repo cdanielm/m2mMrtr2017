@@ -1,0 +1,7 @@
+[%
+//import "../integration-utils.eol";
+var appRoot = mrtrm!WebApplication.all().first();
+out.println(appRoot.name);
+var folders = appRoot.folders;
+TemplateFactory.setOutputRoot("../GeneratedOutput/" + appRoot.name);
+%]

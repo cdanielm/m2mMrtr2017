@@ -4,12 +4,12 @@
 
 .controller('[%=nombreFeature%]', function($scope, $cordovaSQLite) {
 
-  $scope.list[%=nombreFeature%] = function() {
+  $scope.accounts = function() {
     var query = "SELECT * FROM [%=nombreFeature%]";
     $cordovaSQLite.execute(db, query);
   }
 
-  $scope.add[%=nombreFeature%] = function(){
+  $scope.addAccount = function(){
     var query = "INSERT INTO [%=nombreFeature%] (firstname, lastname) VALUES (?, ?)";
     $cordovaSQLite.execute(db, query, [$scope.firstnameText, $scope.lastnameText]);
     $scope.firstnameText = '';

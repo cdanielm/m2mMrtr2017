@@ -1,11 +1,9 @@
 [%
 //import "../integration-utils.eol";
-var appRoot = mrtrm!WebApplication.all().first();
-out.println(appRoot.name);
-var features = appRoot.features;
+var appRoot = mrtrm!WebApplication;
+//out.println(appRoot.name);
+//var features = appRoot.features;
 TemplateFactory.setOutputRoot("../GeneratedOutput/" + appRoot.name);
-
-
 %]
 
 var db = null;
@@ -23,32 +21,10 @@ angular.module('starter', ['ionic', 'ngCordova'])
     }
 
     db = $cordovaSQLite.openDB({ name: "my.db" });
-	[% 
-for(feature in features){
-	var nombre = feature.name;
-	//var componentes= getComponents(feature.componentsUI);
-	var listaComponentes :String = "";
-	for(componente in feature.componentsUI){
-		listaComponentes = listaComponentes+componente.name+",";
-	}
-	//out.println("$cordovaSQLite.execute(db, 'CREATE TABLE IF NOT EXIST "+nombre+" (id integer primary key, firstname text, lastname text)');");	
-	out.println("$cordovaSQLite.execute(db, 'CREATE TABLE IF NOT EXIST "+nombre+" ("+listaComponentes+")');");
-}
-%]    
+
+    $cordovaSQLite.execute(db, "CREATE TABLE IF NOT EXIST people (id integer primary key, firstname text, lastname text)");
   });
 })
-[%
-for(feature in features){
-	var t : Template = TemplateFactory.load("controllerTemplate.egl");//cargar plantilla independiente para tabla
-	
-	//Configurar plantilla t
-	//asignarle variables y datos
-	t.populate("nombreApp",appRoot.name);
-	t.populate("feature",feature);
-	out.print(t.process());
-	
-}
-%]
 
 .controller('AccountController', function($scope, $cordovaSQLite) {
 
