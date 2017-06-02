@@ -143,9 +143,6 @@
     </profileApplication>
   </uml:Model>
   <wspa:WebSinglePageAplication xmi:id="_p70HsEPjEee7W4sjT_6_FA" base_Model="_lLFjoEPjEee7W4sjT_6_FA" name="MirutaTuRuta"/>
-  <wspa:Feature xmi:id="_jOamIEPkEee7W4sjT_6_FA" base_Class="_nXwPkkPjEee7W4sjT_6_FA"/>
-  <wspa:Feature xmi:id="_6tyaoEPkEee7W4sjT_6_FA" base_Class="_nXwPgEPjEee7W4sjT_6_FA"/>
-  <wspa:Feature xmi:id="_TIP-YEPlEee7W4sjT_6_FA" base_Class="_nXvod0PjEee7W4sjT_6_FA"/>
   <wspa:ComponentUI xmi:id="_Bmo24EPnEee7W4sjT_6_FA" base_Property="_nXvoeEPjEee7W4sjT_6_FA"/>
   <wspa:ComponentUI xmi:id="_DlSU4EPnEee7W4sjT_6_FA" base_Property="_nXvoeUPjEee7W4sjT_6_FA"/>
   <wspa:ComponentUI xmi:id="_O52ZYEPnEee7W4sjT_6_FA" base_Property="_nXwPhUPjEee7W4sjT_6_FA"/>
@@ -158,12 +155,15 @@
   <wspa:ComponentUI xmi:id="_U29RAEPnEee7W4sjT_6_FA" base_Property="_nXwPjEPjEee7W4sjT_6_FA"/>
   <wspa:ComponentUI xmi:id="_V2FLsEPnEee7W4sjT_6_FA" base_Property="_nXwPjUPjEee7W4sjT_6_FA"/>
   <wspa:ComponentUI xmi:id="_W0QrMEPnEee7W4sjT_6_FA" base_Property="_nXwPnEPjEee7W4sjT_6_FA"/>
-  <wspa:ComponentUI xmi:id="_Xxg9oEPnEee7W4sjT_6_FA" base_Property="_nXwPnUPjEee7W4sjT_6_FA"/>
+  <wspa:ComponentUI xmi:id="_Xxg9oEPnEee7W4sjT_6_FA" base_Property="_nXwPnUPjEee7W4sjT_6_FA" label="NombreLabel" name="Nombre" tooltip="Ingrese Nombre" type="TEXT"/>
   <wspa:ComponentUI xmi:id="_Yuj0sEPnEee7W4sjT_6_FA" base_Property="_nXwPnkPjEee7W4sjT_6_FA"/>
   <wspa:ComponentUI xmi:id="_aBnYAEPnEee7W4sjT_6_FA" base_Property="_nXvBZEPjEee7W4sjT_6_FA"/>
   <wspa:ComponentUI xmi:id="_a4_r8EPnEee7W4sjT_6_FA" base_Property="_nXvBZUPjEee7W4sjT_6_FA"/>
   <wspa:ComponentUI xmi:id="_e4zwcEPnEee7W4sjT_6_FA" base_Property="_nXvBZkPjEee7W4sjT_6_FA"/>
   <wspa:ComponentUI xmi:id="_gP3qAEPnEee7W4sjT_6_FA" base_Property="_nXvBZ0PjEee7W4sjT_6_FA"/>
-  <wspa:Form xmi:id="_PBxqwEWyEeeSXZH0AgKHlw" base_Class="_nXvBY0PjEee7W4sjT_6_FA" name="Vehículo"/>
-  <wspa:List xmi:id="_5yUN8EWyEeeSXZH0AgKHlw" base_Class="_nXvBY0PjEee7W4sjT_6_FA"/>
+  <wspa:Form xmi:id="_PBxqwEWyEeeSXZH0AgKHlw" base_Class="_nXvBY0PjEee7W4sjT_6_FA" name="VehículoF"/>
+  <wspa:List xmi:id="_5yUN8EWyEeeSXZH0AgKHlw" base_Class="_nXvBY0PjEee7W4sjT_6_FA" name="VehículoL"/>
+  <wspa:Form xmi:id="_UIPb4Ec_Eeel46VKvFCnFw" base_Class="_nXwPkkPjEee7W4sjT_6_FA" name="UsuarioF"/>
+  <wspa:Form xmi:id="_WSyn4Ec_Eeel46VKvFCnFw" base_Class="_nXvod0PjEee7W4sjT_6_FA" name="PostulaciónF"/>
+  <wspa:Form xmi:id="_Yn3B0Ec_Eeel46VKvFCnFw" base_Class="_nXwPgEPjEee7W4sjT_6_FA" name="Ruta"/>
 </xmi:XMI>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mrtrm:WebApplication xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mrtrm="http://www.example.org/mrtrm" xmi:id="_4GtLIEc7Eeel46VKvFCnFw" name="Mi Ruta tu Ruta">
+  <features xmi:id="_4GuZQEc7Eeel46VKvFCnFw" name="Postulaci&#xf3;nF">
+    <componentsUI xmi:id="_4GvnYEc7Eeel46VKvFCnFw" name="FechaPostulacion"/>
+    <componentsUI xmi:id="_4GwOcEc7Eeel46VKvFCnFw" name="EstadoPostulacion"/>
+  </features>
+  <features xmi:id="_4GxckEc7Eeel46VKvFCnFw" name="RutaF">
+    <componentsUI xmi:id="_4GyDoEc7Eeel46VKvFCnFw" name="Nombre"/>
+    <componentsUI xmi:id="_4GzRwEc7Eeel46VKvFCnFw" name="LongitudInicio"/>
+    <componentsUI xmi:id="_4G0f4Ec7Eeel46VKvFCnFw" name="LatitudInicio"/>
+    <componentsUI xmi:id="_4G1G8Ec7Eeel46VKvFCnFw" name="LongitudFin"/>
+    <componentsUI xmi:id="_4G1uAEc7Eeel46VKvFCnFw" name="LatitudFin"/>
+    <componentsUI xmi:id="_4G28IEc7Eeel46VKvFCnFw" name="CupoTotal"/>
+    <componentsUI xmi:id="_4G5YYEc7Eeel46VKvFCnFw" name="FechaEjecucion"/>
+    <componentsUI xmi:id="_4G6mgEc7Eeel46VKvFCnFw" name="Descripcion"/>
+    <componentsUI xmi:id="_4G7NkEc7Eeel46VKvFCnFw" name="Condiciones"/>
+  </features>
+  <features xmi:id="_4G8bsEc7Eeel46VKvFCnFw" name="UsuarioF">
+    <componentsUI xmi:id="_4G9CwEc7Eeel46VKvFCnFw" name="Email"/>
+    <componentsUI xmi:id="_4G-Q4Ec7Eeel46VKvFCnFw" name="Nombre" label="NombreLabel"/>
+    <componentsUI xmi:id="_4G-38Ec7Eeel46VKvFCnFw" name="contrasena"/>
+  </features>
+  <features xsi:type="mrtrm:Form" xmi:id="_4G_fAEc7Eeel46VKvFCnFw" name="Veh&#xed;culoF">
+    <componentsUI xmi:id="_4HAGEEc7Eeel46VKvFCnFw" name="Nombre"/>
+    <componentsUI xmi:id="_4HAtIEc7Eeel46VKvFCnFw" name="Placa"/>
+    <componentsUI xmi:id="_4HAtIUc7Eeel46VKvFCnFw" name="Color"/>
+    <componentsUI xmi:id="_4HBUMEc7Eeel46VKvFCnFw" name="TipoVehiculo"/>
+  </features>
+  <features xsi:type="mrtrm:Lista" xmi:id="_4HB7QEc7Eeel46VKvFCnFw" name="Veh&#xed;culoF"/>
+</mrtrm:WebApplication>

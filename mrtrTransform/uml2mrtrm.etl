@@ -1,11 +1,14 @@
 // Create the root element of the target model
 rule Model2WebApp
 	transform m : uml!Model
+	
 	to w : mrtrm!WebApplication {
 	
 	guard : m.hasStereotype("wspa::WebSinglePageAplication")
 	
 	w.name = m.name;
+	
+	
 }
 
 // Transform clases into forms and add them to the root element
@@ -82,7 +85,7 @@ rule Property2Component
 	if(nameValue.length() > 0) {
 		f.name = nameValue;
 	} else {
-		f.name = p.name + "ComponentUI";
+		f.name = p.name;
 	}
 	f.label = p.getPropertyValue("ComponentUI", "label");
 	//f.toolTip = p.getPropertyValue("Component", "toolTip");

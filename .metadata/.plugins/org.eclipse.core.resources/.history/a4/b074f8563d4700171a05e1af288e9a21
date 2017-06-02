@@ -1,0 +1,26 @@
+[%
+	var nombreFeature= feature.name;
+	
+	var listaComponentes :String = "";
+	var listaComponentesScope :String="";
+	for(componente in feature.componentsUI){
+		listaComponentes = listaComponentes+componente.name+",";
+		listaComponentesScope = listaComponentes+"$scope."+componente.name+",";
+	}
+%]
+
+.controller('[%=nombreFeature%]', function($scope, $cordovaSQLite) {
+
+  $scope.list[%=nombreFeature%] = function() {
+    var query = "SELECT * FROM [%=nombreFeature%]";
+    $cordovaSQLite.execute(db, query);
+  }
+
+  $scope.add[%=nombreFeature%] = function(){
+    var query = "INSERT INTO [%=nombreFeature%] ([%=listaComponentes%]) VALUES (?, ?)";
+    $cordovaSQLite.execute(db, query, [[%=listaComponentesScope%] $scope.lastnameText]);
+    $scope.firstnameText = '';
+    $scope.lastnameText = '';
+  }
+
+});
