@@ -45,7 +45,7 @@ for(feature in features){
 	//asignarle variables y datos
 	t.populate("nombreApp",appRoot.name);
 	t.populate("feature",feature);
-	t.process();
+	t.process()
 	out.print(t.process());	
 	t.generate("../Generado/plantilla.algo");
 }
