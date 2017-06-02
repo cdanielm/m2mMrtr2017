@@ -23,7 +23,7 @@
     for(componente in feature.componentsUI){
 		out.println("     $scope."+componente.name+"='';");		
 	}
-    %]
+    %]    
   }
 
 });

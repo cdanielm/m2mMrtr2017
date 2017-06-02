@@ -1,7 +1,6 @@
 [%
 //import "../integration-utils.eol";
 var appRoot = mrtrm!WebApplication.all().first();
-var nombreApp = appRoot.name;
 out.println(appRoot.name);
 var features = appRoot.features;
 TemplateFactory.setOutputRoot("../GeneratedOutput/" + appRoot.name);
@@ -48,7 +47,7 @@ for(feature in features){
 	t.populate("feature",feature);
 	
 	t.process();
-	t.generate("plantilla"+feature.name+".js");
+	t.generate("plantilla"+feature.name+".algo");
 	out.print(t.process());	
 	
 }
