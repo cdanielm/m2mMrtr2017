@@ -33,7 +33,7 @@ for(feature in features){
 		listaComponentes = listaComponentes+componente.name+",";
 	}
 	//out.println("$cordovaSQLite.execute(db, 'CREATE TABLE IF NOT EXIST "+nombre+" (id integer primary key, firstname text, lastname text)');");	
-	out.println("     $cordovaSQLite.execute(db, 'CREATE TABLE IF NOT EXIST "+nombre+" ("+listaComponentes+")');");
+	out.println("$cordovaSQLite.execute(db, 'CREATE TABLE IF NOT EXIST "+nombre+" ("+listaComponentes+")');");
 }
 %]    
   });
