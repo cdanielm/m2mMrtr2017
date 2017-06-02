@@ -9,7 +9,7 @@
 	}
 %]
 
-.controller('[%=nombreFeature%]', function($scope, $cordovaSQLite) {
+AdminModule.controller('[%=nombreFeature%]', function($scope, $cordovaSQLite) {
 
   $scope.list[%=nombreFeature%] = function() {
     var query = "SELECT * FROM [%=nombreFeature%]";
@@ -21,7 +21,7 @@
     $cordovaSQLite.execute(db, query, [[%=listaComponentesScope%]]);
     [%
     for(componente in feature.componentsUI){
-		out.println("     $scope."+componente.name+"='';");		
+		out.println("     $scope."+componente.name+"='';");
 	}
     %]
   }

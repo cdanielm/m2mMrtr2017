@@ -1,0 +1,43 @@
+[%
+//import "../integration-utils.eol";
+var appRoot = mrtrm!WebApplication.all().first();
+var nombreApp = appRoot.name;
+out.println(appRoot.name);
+var features = appRoot.features;
+TemplateFactory.setOutputRoot("../GeneratedOutput/" + appRoot.name);
+%]
+
+[%
+var tp : Template = TemplateFactory.load("appjs.egl");
+tp.populate("features",features);
+tp.process();
+tp.generate("../Controllers/app.js");
+		
+
+for(feature in features){
+	var t : Template = TemplateFactory.load("controllerTemplate.egl");//cargar plantilla independiente para tabla
+		
+		//Configurar plantilla t
+		//asignarle variables y datos
+		t.populate("nombreApp",appRoot.name);
+		t.populate("feature",feature);
+		
+		t.process();
+		t.generate("../Controllers/"+feature.name+"Controller.js");
+		out.print(t.process());	
+		
+	if(feature.isTypeOf(Form)){
+		var t : Template = TemplateFactory.load("formTemplate.egl");//cargar plantilla independiente para tabla
+		
+		//Configurar plantilla t
+		//asignarle variables y datos
+		t.populate("nombreApp",appRoot.name);
+		t.populate("feature",feature);
+		
+		t.process();
+		t.generate("../Views/"+feature.name+"Home.html");
+		out.print(t.process());
+	}	
+}
+
+%]

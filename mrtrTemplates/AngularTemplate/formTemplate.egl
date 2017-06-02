@@ -35,27 +35,30 @@
 
           <form ng-submit="add[%=feature.name%]()">
             <div class="list">
-              <label class="item item-input item-stacked-label">
-                <span class="input-label">First Name</span>
-                <input type="text" placeholder="John" ng-model="firstnameText">
+            [%
+            for(componente in feature.componentsUI){ %]
+            	<label class="item item-input item-stacked-label">
+                <span class="input-label">[%=componente.name%]</span>
+                <input type="text" placeholder="[%=componente.toolTIp%]" ng-model="[%=componente.name%]Text">
               </label>
-              <label class="item item-input item-stacked-label">
-                <span class="input-label">Last Name</span>
-                <input type="text" placeholder="Suhr" ng-model="lastnameText">
-              </label>
+            [%} %]              
               <div class="padding">
-                <button class="button button-block button-positive">Create Account</button>
+                <button class="button button-block button-positive">Create [%=feature.name%]</button>
               </div>
             </div>
           </form>
 
           <ul class="list list-inset">
             <li class="item item-divider">
-              {{accounts.length}} records
+              {{list[%=feature.name%].length}} records
             </li>
-            <li class="item" ng-repeat="account in accounts">
+            <li class="item" ng-repeat="[%=feature.name%] in lista[%=feature.name%]">
               <i class="icon ion-person"></i>&nbsp; - &nbsp;
-              <span>{{account.firstname}} {{account.lastname}}</span>
+              <span>
+              [%for(componente in feature.componentsUI){
+              out.println("           {{"+feature.name+"."+componente.name+"}} ");
+              }%]
+              </span>
             </li>
           </ul>
 

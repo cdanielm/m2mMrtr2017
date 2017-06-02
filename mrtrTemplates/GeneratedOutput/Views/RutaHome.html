@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/ng-cordova.js"></script>
+    <script src="cordova.js"></script>
+
+    <!--Mi Ruta tu Ruta's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Principal de Mi Ruta tu Ruta</h1>
+      </ion-header-bar>
+
+      <ion-content ng-controller="RutaController">
+
+          <form ng-submit="addRuta()">
+            <div class="list">
+            	<label class="item item-input item-stacked-label">
+                <span class="input-label">Nombre</span>
+                <input type="text" placeholder="" ng-model="NombreText">
+              </label>
+            	<label class="item item-input item-stacked-label">
+                <span class="input-label">LongitudInicio</span>
+                <input type="text" placeholder="" ng-model="LongitudInicioText">
+              </label>
+            	<label class="item item-input item-stacked-label">
+                <span class="input-label">LatitudInicio</span>
+                <input type="text" placeholder="" ng-model="LatitudInicioText">
+              </label>
+            	<label class="item item-input item-stacked-label">
+                <span class="input-label">LongitudFin</span>
+                <input type="text" placeholder="" ng-model="LongitudFinText">
+              </label>
+            	<label class="item item-input item-stacked-label">
+                <span class="input-label">LatitudFin</span>
+                <input type="text" placeholder="" ng-model="LatitudFinText">
+              </label>
+            	<label class="item item-input item-stacked-label">
+                <span class="input-label">CupoTotal</span>
+                <input type="text" placeholder="" ng-model="CupoTotalText">
+              </label>
+            	<label class="item item-input item-stacked-label">
+                <span class="input-label">FechaEjecucion</span>
+                <input type="text" placeholder="" ng-model="FechaEjecucionText">
+              </label>
+            	<label class="item item-input item-stacked-label">
+                <span class="input-label">Descripcion</span>
+                <input type="text" placeholder="" ng-model="DescripcionText">
+              </label>
+            	<label class="item item-input item-stacked-label">
+                <span class="input-label">Condiciones</span>
+                <input type="text" placeholder="" ng-model="CondicionesText">
+              </label>
+              
+              <div class="padding">
+                <button class="button button-block button-positive">Create Ruta</button>
+              </div>
+            </div>
+          </form>
+
+          <ul class="list list-inset">
+            <li class="item item-divider">
+              {{listRuta.length}} records
+            </li>
+            <li class="item" ng-repeat="Ruta in listaRuta">
+              <i class="icon ion-person"></i>&nbsp; - &nbsp;
+              <span>
+           {{Ruta.Nombre}} 
+           {{Ruta.LongitudInicio}} 
+           {{Ruta.LatitudInicio}} 
+           {{Ruta.LongitudFin}} 
+           {{Ruta.LatitudFin}} 
+           {{Ruta.CupoTotal}} 
+           {{Ruta.FechaEjecucion}} 
+           {{Ruta.Descripcion}} 
+           {{Ruta.Condiciones}} 
+              </span>
+            </li>
+          </ul>
+
+      </ion-content>
+
+    </ion-pane>
+  </body>
+</html>

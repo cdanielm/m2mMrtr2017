@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;mrtrTemplates/AngularTemplate/appjs.egl&apos; to &apos;appjsTemplate.egl&apos;" description="Rename resource &apos;appjs.egl&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="AngularTemplate/appjs.egl" name="appjsTemplate.egl" stamp="1496379889509" updateReferences="true"/>
+</session>
