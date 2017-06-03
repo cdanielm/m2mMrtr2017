@@ -1,0 +1,14 @@
+<div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+    <!-- Sidebar -->
+    <dir-Menu-Principal></dir-Menu-Principal>
+    <!-- End Sidebar -->
+    <div id="content-wrapper">
+        <div class="page-content">
+            <!-- Header Bar -->
+            <dir-header></dir-header>
+            <!-- End Header Bar -->
+            <!-- Main Content -->
+            <div ui-view></div>
+        </div><!-- End Page Content -->
+    </div><!-- End Content Wrapper -->
+</div><!-- End Page Wrapper -->

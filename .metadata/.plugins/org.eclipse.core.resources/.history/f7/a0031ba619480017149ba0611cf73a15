@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mrtrm:WebApplication xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mrtrm="http://www.example.org/mrtrm" name="MiRutatuRutaApp">
+  <features xsi:type="mrtrm:Form" name="Veh&#xed;culoF">
+    <componentsUI name="NombreN" label="Nombre" title="NOMBRE"/>
+    <componentsUI name="Placa" label="Placa: " title="PLACA"/>
+    <componentsUI name="Color" label="Color: " title="COLOR"/>
+    <componentsUI name="TipoVehiculo" label="Tipo: " title="TIPO"/>
+  </features>
+  <features xsi:type="mrtrm:Form" name="Postulaci&#xf3;nF">
+    <componentsUI name="FechaPostulacionN" label="Fecha Postulaci&#xf3;n: " title="FECHA POSTULACION"/>
+    <componentsUI name="EstadoPostulacion" label="Estado Postulaci&#xf3;n: " title="Estado dela postulaci&#xf3;n de la Ruta."/>
+  </features>
+  <features xsi:type="mrtrm:Form" name="Ruta">
+    <componentsUI name="Nombre" label="Nombre: " title="NOMBRE"/>
+    <componentsUI name="LongitudInicio" label="Longitud Inicio" title="Longitud Inicial de Ruta"/>
+    <componentsUI name="LatitudInicio" label="Latitud Inicial" title="Latitud Inicial de Ruta"/>
+    <componentsUI name="LongitudFin" label="Longitud Final: " title="Longitud Final de Ruta"/>
+    <componentsUI name="LatitudFin" label="Latitud Fin: " title="LATITUDFIN"/>
+    <componentsUI name="CupoTotal" label="Cupo M&#xe1;ximo: " title="Latitud Final de Ruta"/>
+    <componentsUI name="FechaEjecucion" label="Fecha de Ejecuci&#xf3;n: " title="Fecha de Ejecuci&#xf3;n"/>
+    <componentsUI name="Descripcion" label="Descripci&#xf3;n: " title="Descripci&#xf3;n detallada de ruta"/>
+    <componentsUI name="Condiciones" label="Condiciones: " title="Condici&#xf3;n de ruta"/>
+  </features>
+  <features xsi:type="mrtrm:Form" name="UsuarioF">
+    <componentsUI name="EmailN" label="Email: " title="EMAIL"/>
+    <componentsUI name="Nombre" label="NombreLabel" title="NOMBRE"/>
+    <componentsUI name="Password" label="Password: " title="PASSWORD"/>
+  </features>
+  <features xsi:type="mrtrm:Lista" name="Veh&#xed;culoF"/>
+</mrtrm:WebApplication>

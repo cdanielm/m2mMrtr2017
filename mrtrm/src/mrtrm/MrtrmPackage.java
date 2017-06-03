@@ -123,22 +123,22 @@ public interface MrtrmPackage extends EPackage {
 	int FEATURE__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Action Services</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FEATURE__ACTION_SERVICES = 1;
-
-	/**
 	 * The feature id for the '<em><b>Components UI</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FEATURE__COMPONENTS_UI = 2;
+	int FEATURE__COMPONENTS_UI = 1;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FEATURE__URL = 2;
 
 	/**
 	 * The number of structural features of the '<em>Feature</em>' class.
@@ -159,52 +159,6 @@ public interface MrtrmPackage extends EPackage {
 	int FEATURE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link mrtrm.impl.ActionServiceImpl <em>Action Service</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see mrtrm.impl.ActionServiceImpl
-	 * @see mrtrm.impl.MrtrmPackageImpl#getActionService()
-	 * @generated
-	 */
-	int ACTION_SERVICE = 2;
-
-	/**
-	 * The feature id for the '<em><b>Action</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_SERVICE__ACTION = 0;
-
-	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_SERVICE__PARAMETERS = 1;
-
-	/**
-	 * The number of structural features of the '<em>Action Service</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_SERVICE_FEATURE_COUNT = 2;
-
-	/**
-	 * The number of operations of the '<em>Action Service</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_SERVICE_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link mrtrm.impl.ListaImpl <em>Lista</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -212,7 +166,7 @@ public interface MrtrmPackage extends EPackage {
 	 * @see mrtrm.impl.MrtrmPackageImpl#getLista()
 	 * @generated
 	 */
-	int LISTA = 3;
+	int LISTA = 2;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -224,15 +178,6 @@ public interface MrtrmPackage extends EPackage {
 	int LISTA__NAME = FEATURE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Action Services</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LISTA__ACTION_SERVICES = FEATURE__ACTION_SERVICES;
-
-	/**
 	 * The feature id for the '<em><b>Components UI</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -240,6 +185,15 @@ public interface MrtrmPackage extends EPackage {
 	 * @ordered
 	 */
 	int LISTA__COMPONENTS_UI = FEATURE__COMPONENTS_UI;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LISTA__URL = FEATURE__URL;
 
 	/**
 	 * The number of structural features of the '<em>Lista</em>' class.
@@ -267,7 +221,7 @@ public interface MrtrmPackage extends EPackage {
 	 * @see mrtrm.impl.MrtrmPackageImpl#getForm()
 	 * @generated
 	 */
-	int FORM = 4;
+	int FORM = 3;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -279,15 +233,6 @@ public interface MrtrmPackage extends EPackage {
 	int FORM__NAME = FEATURE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Action Services</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM__ACTION_SERVICES = FEATURE__ACTION_SERVICES;
-
-	/**
 	 * The feature id for the '<em><b>Components UI</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -295,6 +240,15 @@ public interface MrtrmPackage extends EPackage {
 	 * @ordered
 	 */
 	int FORM__COMPONENTS_UI = FEATURE__COMPONENTS_UI;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORM__URL = FEATURE__URL;
 
 	/**
 	 * The number of structural features of the '<em>Form</em>' class.
@@ -315,62 +269,6 @@ public interface MrtrmPackage extends EPackage {
 	int FORM_OPERATION_COUNT = FEATURE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link mrtrm.impl.DetailImpl <em>Detail</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see mrtrm.impl.DetailImpl
-	 * @see mrtrm.impl.MrtrmPackageImpl#getDetail()
-	 * @generated
-	 */
-	int DETAIL = 5;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DETAIL__NAME = FEATURE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Action Services</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DETAIL__ACTION_SERVICES = FEATURE__ACTION_SERVICES;
-
-	/**
-	 * The feature id for the '<em><b>Components UI</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DETAIL__COMPONENTS_UI = FEATURE__COMPONENTS_UI;
-
-	/**
-	 * The number of structural features of the '<em>Detail</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DETAIL_FEATURE_COUNT = FEATURE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Detail</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DETAIL_OPERATION_COUNT = FEATURE_OPERATION_COUNT + 0;
-
-
-	/**
 	 * The meta object id for the '{@link mrtrm.impl.ComponentUIImpl <em>Component UI</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -378,7 +276,7 @@ public interface MrtrmPackage extends EPackage {
 	 * @see mrtrm.impl.MrtrmPackageImpl#getComponentUI()
 	 * @generated
 	 */
-	int COMPONENT_UI = 6;
+	int COMPONENT_UI = 4;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -417,13 +315,22 @@ public interface MrtrmPackage extends EPackage {
 	int COMPONENT_UI__TYPE = 3;
 
 	/**
+	 * The feature id for the '<em><b>Title</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPONENT_UI__TITLE = 4;
+
+	/**
 	 * The number of structural features of the '<em>Component UI</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMPONENT_UI_FEATURE_COUNT = 4;
+	int COMPONENT_UI_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Component UI</em>' class.
@@ -436,50 +343,32 @@ public interface MrtrmPackage extends EPackage {
 
 
 	/**
-	 * The meta object id for the '{@link mrtrm.impl.ParameterImpl <em>Parameter</em>}' class.
+	 * The meta object id for the '{@link mrtrm.NewInterface6 <em>New Interface6</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see mrtrm.impl.ParameterImpl
-	 * @see mrtrm.impl.MrtrmPackageImpl#getParameter()
+	 * @see mrtrm.NewInterface6
+	 * @see mrtrm.impl.MrtrmPackageImpl#getNewInterface6()
 	 * @generated
 	 */
-	int PARAMETER = 7;
+	int NEW_INTERFACE6 = 5;
 
 	/**
-	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * The number of structural features of the '<em>New Interface6</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARAMETER__TYPE = 0;
+	int NEW_INTERFACE6_FEATURE_COUNT = 0;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The number of operations of the '<em>New Interface6</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARAMETER__NAME = 1;
-
-	/**
-	 * The number of structural features of the '<em>Parameter</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARAMETER_FEATURE_COUNT = 2;
-
-	/**
-	 * The number of operations of the '<em>Parameter</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARAMETER_OPERATION_COUNT = 0;
+	int NEW_INTERFACE6_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link mrtrm.ComponentUIType <em>Component UI Type</em>}' enum.
@@ -489,7 +378,7 @@ public interface MrtrmPackage extends EPackage {
 	 * @see mrtrm.impl.MrtrmPackageImpl#getComponentUIType()
 	 * @generated
 	 */
-	int COMPONENT_UI_TYPE = 8;
+	int COMPONENT_UI_TYPE = 6;
 
 
 	/**
@@ -546,17 +435,6 @@ public interface MrtrmPackage extends EPackage {
 	EAttribute getFeature_Name();
 
 	/**
-	 * Returns the meta object for the reference '{@link mrtrm.Feature#getActionServices <em>Action Services</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Action Services</em>'.
-	 * @see mrtrm.Feature#getActionServices()
-	 * @see #getFeature()
-	 * @generated
-	 */
-	EReference getFeature_ActionServices();
-
-	/**
 	 * Returns the meta object for the containment reference list '{@link mrtrm.Feature#getComponentsUI <em>Components UI</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -568,36 +446,15 @@ public interface MrtrmPackage extends EPackage {
 	EReference getFeature_ComponentsUI();
 
 	/**
-	 * Returns the meta object for class '{@link mrtrm.ActionService <em>Action Service</em>}'.
+	 * Returns the meta object for the attribute '{@link mrtrm.Feature#getUrl <em>Url</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Action Service</em>'.
-	 * @see mrtrm.ActionService
+	 * @return the meta object for the attribute '<em>Url</em>'.
+	 * @see mrtrm.Feature#getUrl()
+	 * @see #getFeature()
 	 * @generated
 	 */
-	EClass getActionService();
-
-	/**
-	 * Returns the meta object for the attribute '{@link mrtrm.ActionService#getAction <em>Action</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Action</em>'.
-	 * @see mrtrm.ActionService#getAction()
-	 * @see #getActionService()
-	 * @generated
-	 */
-	EAttribute getActionService_Action();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link mrtrm.ActionService#getParameters <em>Parameters</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Parameters</em>'.
-	 * @see mrtrm.ActionService#getParameters()
-	 * @see #getActionService()
-	 * @generated
-	 */
-	EReference getActionService_Parameters();
+	EAttribute getFeature_Url();
 
 	/**
 	 * Returns the meta object for class '{@link mrtrm.Lista <em>Lista</em>}'.
@@ -618,16 +475,6 @@ public interface MrtrmPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getForm();
-
-	/**
-	 * Returns the meta object for class '{@link mrtrm.Detail <em>Detail</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Detail</em>'.
-	 * @see mrtrm.Detail
-	 * @generated
-	 */
-	EClass getDetail();
 
 	/**
 	 * Returns the meta object for class '{@link mrtrm.ComponentUI <em>Component UI</em>}'.
@@ -684,36 +531,25 @@ public interface MrtrmPackage extends EPackage {
 	EAttribute getComponentUI_Type();
 
 	/**
-	 * Returns the meta object for class '{@link mrtrm.Parameter <em>Parameter</em>}'.
+	 * Returns the meta object for the attribute '{@link mrtrm.ComponentUI#getTitle <em>Title</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Parameter</em>'.
-	 * @see mrtrm.Parameter
+	 * @return the meta object for the attribute '<em>Title</em>'.
+	 * @see mrtrm.ComponentUI#getTitle()
+	 * @see #getComponentUI()
 	 * @generated
 	 */
-	EClass getParameter();
+	EAttribute getComponentUI_Title();
 
 	/**
-	 * Returns the meta object for the attribute '{@link mrtrm.Parameter#getType <em>Type</em>}'.
+	 * Returns the meta object for class '{@link mrtrm.NewInterface6 <em>New Interface6</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Type</em>'.
-	 * @see mrtrm.Parameter#getType()
-	 * @see #getParameter()
+	 * @return the meta object for class '<em>New Interface6</em>'.
+	 * @see mrtrm.NewInterface6
 	 * @generated
 	 */
-	EAttribute getParameter_Type();
-
-	/**
-	 * Returns the meta object for the attribute '{@link mrtrm.Parameter#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see mrtrm.Parameter#getName()
-	 * @see #getParameter()
-	 * @generated
-	 */
-	EAttribute getParameter_Name();
+	EClass getNewInterface6();
 
 	/**
 	 * Returns the meta object for enum '{@link mrtrm.ComponentUIType <em>Component UI Type</em>}'.
@@ -793,14 +629,6 @@ public interface MrtrmPackage extends EPackage {
 		EAttribute FEATURE__NAME = eINSTANCE.getFeature_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Action Services</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference FEATURE__ACTION_SERVICES = eINSTANCE.getFeature_ActionServices();
-
-		/**
 		 * The meta object literal for the '<em><b>Components UI</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -809,30 +637,12 @@ public interface MrtrmPackage extends EPackage {
 		EReference FEATURE__COMPONENTS_UI = eINSTANCE.getFeature_ComponentsUI();
 
 		/**
-		 * The meta object literal for the '{@link mrtrm.impl.ActionServiceImpl <em>Action Service</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see mrtrm.impl.ActionServiceImpl
-		 * @see mrtrm.impl.MrtrmPackageImpl#getActionService()
-		 * @generated
-		 */
-		EClass ACTION_SERVICE = eINSTANCE.getActionService();
-
-		/**
-		 * The meta object literal for the '<em><b>Action</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Url</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ACTION_SERVICE__ACTION = eINSTANCE.getActionService_Action();
-
-		/**
-		 * The meta object literal for the '<em><b>Parameters</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ACTION_SERVICE__PARAMETERS = eINSTANCE.getActionService_Parameters();
+		EAttribute FEATURE__URL = eINSTANCE.getFeature_Url();
 
 		/**
 		 * The meta object literal for the '{@link mrtrm.impl.ListaImpl <em>Lista</em>}' class.
@@ -853,16 +663,6 @@ public interface MrtrmPackage extends EPackage {
 		 * @generated
 		 */
 		EClass FORM = eINSTANCE.getForm();
-
-		/**
-		 * The meta object literal for the '{@link mrtrm.impl.DetailImpl <em>Detail</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see mrtrm.impl.DetailImpl
-		 * @see mrtrm.impl.MrtrmPackageImpl#getDetail()
-		 * @generated
-		 */
-		EClass DETAIL = eINSTANCE.getDetail();
 
 		/**
 		 * The meta object literal for the '{@link mrtrm.impl.ComponentUIImpl <em>Component UI</em>}' class.
@@ -907,30 +707,22 @@ public interface MrtrmPackage extends EPackage {
 		EAttribute COMPONENT_UI__TYPE = eINSTANCE.getComponentUI_Type();
 
 		/**
-		 * The meta object literal for the '{@link mrtrm.impl.ParameterImpl <em>Parameter</em>}' class.
+		 * The meta object literal for the '<em><b>Title</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see mrtrm.impl.ParameterImpl
-		 * @see mrtrm.impl.MrtrmPackageImpl#getParameter()
 		 * @generated
 		 */
-		EClass PARAMETER = eINSTANCE.getParameter();
+		EAttribute COMPONENT_UI__TITLE = eINSTANCE.getComponentUI_Title();
 
 		/**
-		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * The meta object literal for the '{@link mrtrm.NewInterface6 <em>New Interface6</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see mrtrm.NewInterface6
+		 * @see mrtrm.impl.MrtrmPackageImpl#getNewInterface6()
 		 * @generated
 		 */
-		EAttribute PARAMETER__TYPE = eINSTANCE.getParameter_Type();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PARAMETER__NAME = eINSTANCE.getParameter_Name();
+		EClass NEW_INTERFACE6 = eINSTANCE.getNewInterface6();
 
 		/**
 		 * The meta object literal for the '{@link mrtrm.ComponentUIType <em>Component UI Type</em>}' enum.

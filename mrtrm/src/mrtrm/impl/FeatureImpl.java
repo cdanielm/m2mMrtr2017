@@ -3,8 +3,6 @@
 package mrtrm.impl;
 
 import java.util.Collection;
-
-import mrtrm.ActionService;
 import mrtrm.ComponentUI;
 import mrtrm.Feature;
 import mrtrm.MrtrmPackage;
@@ -31,8 +29,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link mrtrm.impl.FeatureImpl#getName <em>Name</em>}</li>
- *   <li>{@link mrtrm.impl.FeatureImpl#getActionServices <em>Action Services</em>}</li>
  *   <li>{@link mrtrm.impl.FeatureImpl#getComponentsUI <em>Components UI</em>}</li>
+ *   <li>{@link mrtrm.impl.FeatureImpl#getUrl <em>Url</em>}</li>
  * </ul>
  *
  * @generated
@@ -59,16 +57,6 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getActionServices() <em>Action Services</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getActionServices()
-	 * @generated
-	 * @ordered
-	 */
-	protected ActionService actionServices;
-
-	/**
 	 * The cached value of the '{@link #getComponentsUI() <em>Components UI</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -77,6 +65,26 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
 	 * @ordered
 	 */
 	protected EList<ComponentUI> componentsUI;
+
+	/**
+	 * The default value of the '{@link #getUrl() <em>Url</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUrl()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String URL_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getUrl() <em>Url</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUrl()
+	 * @generated
+	 * @ordered
+	 */
+	protected String url = URL_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -123,49 +131,32 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActionService getActionServices() {
-		if (actionServices != null && actionServices.eIsProxy()) {
-			InternalEObject oldActionServices = (InternalEObject)actionServices;
-			actionServices = (ActionService)eResolveProxy(oldActionServices);
-			if (actionServices != oldActionServices) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MrtrmPackage.FEATURE__ACTION_SERVICES, oldActionServices, actionServices));
-			}
-		}
-		return actionServices;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ActionService basicGetActionServices() {
-		return actionServices;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setActionServices(ActionService newActionServices) {
-		ActionService oldActionServices = actionServices;
-		actionServices = newActionServices;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MrtrmPackage.FEATURE__ACTION_SERVICES, oldActionServices, actionServices));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<ComponentUI> getComponentsUI() {
 		if (componentsUI == null) {
 			componentsUI = new EObjectContainmentEList<ComponentUI>(ComponentUI.class, this, MrtrmPackage.FEATURE__COMPONENTS_UI);
 		}
 		return componentsUI;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getUrl() {
+		return url;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setUrl(String newUrl) {
+		String oldUrl = url;
+		url = newUrl;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MrtrmPackage.FEATURE__URL, oldUrl, url));
 	}
 
 	/**
@@ -192,11 +183,10 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
 		switch (featureID) {
 			case MrtrmPackage.FEATURE__NAME:
 				return getName();
-			case MrtrmPackage.FEATURE__ACTION_SERVICES:
-				if (resolve) return getActionServices();
-				return basicGetActionServices();
 			case MrtrmPackage.FEATURE__COMPONENTS_UI:
 				return getComponentsUI();
+			case MrtrmPackage.FEATURE__URL:
+				return getUrl();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -213,12 +203,12 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
 			case MrtrmPackage.FEATURE__NAME:
 				setName((String)newValue);
 				return;
-			case MrtrmPackage.FEATURE__ACTION_SERVICES:
-				setActionServices((ActionService)newValue);
-				return;
 			case MrtrmPackage.FEATURE__COMPONENTS_UI:
 				getComponentsUI().clear();
 				getComponentsUI().addAll((Collection<? extends ComponentUI>)newValue);
+				return;
+			case MrtrmPackage.FEATURE__URL:
+				setUrl((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -235,11 +225,11 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
 			case MrtrmPackage.FEATURE__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case MrtrmPackage.FEATURE__ACTION_SERVICES:
-				setActionServices((ActionService)null);
-				return;
 			case MrtrmPackage.FEATURE__COMPONENTS_UI:
 				getComponentsUI().clear();
+				return;
+			case MrtrmPackage.FEATURE__URL:
+				setUrl(URL_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -255,10 +245,10 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
 		switch (featureID) {
 			case MrtrmPackage.FEATURE__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case MrtrmPackage.FEATURE__ACTION_SERVICES:
-				return actionServices != null;
 			case MrtrmPackage.FEATURE__COMPONENTS_UI:
 				return componentsUI != null && !componentsUI.isEmpty();
+			case MrtrmPackage.FEATURE__URL:
+				return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -275,6 +265,8 @@ public class FeatureImpl extends MinimalEObjectImpl.Container implements Feature
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
+		result.append(", url: ");
+		result.append(url);
 		result.append(')');
 		return result.toString();
 	}

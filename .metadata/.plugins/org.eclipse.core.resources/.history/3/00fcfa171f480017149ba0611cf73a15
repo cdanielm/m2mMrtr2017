@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mrtrm:WebApplication xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mrtrm="http://www.example.org/mrtrm" name="MiRutatuRutaApp">
+  <features xsi:type="mrtrm:Form" name="Veh&#xed;culoF">
+    <componentsUI name="NombreN" label="Nombre" toolTIp="Nombre del Veh&#xed;culo" title="NOMBRE"/>
+    <componentsUI name="Placa" label="Placa: " toolTIp="Placa Colombiana de Veh&#xed;culo" title="PLACA"/>
+    <componentsUI name="Color" label="Color: " toolTIp="Color Veh&#xed;culo" title="COLOR"/>
+    <componentsUI name="TipoVehiculo" label="Tipo: " toolTIp="Tipo de Veh&#xf1;iculo" title="TIPO"/>
+  </features>
+  <features xsi:type="mrtrm:Form" name="Postulaci&#xf3;nF">
+    <componentsUI name="FechaPostulacionN" label="Fecha Postulaci&#xf3;n: " toolTIp="Fecha de Postulaci&#xf3;n de Ruta" title="FECHA POSTULACION"/>
+    <componentsUI name="EstadoPostulacion" label="Estado Postulaci&#xf3;n: " toolTIp="Estado la postulaci&#xf3;n Actual" title="Estado dela postulaci&#xf3;n de la Ruta."/>
+  </features>
+  <features xsi:type="mrtrm:Form" name="Ruta">
+    <componentsUI name="Nombre" label="Nombre: " toolTIp="Nombre de la Ruta" title="NOMBRE"/>
+    <componentsUI name="LongitudInicio" label="Longitud Inicio" toolTIp="Longitud Inicial" title="Longitud Inicial de Ruta"/>
+    <componentsUI name="LatitudInicio" label="Latitud Inicial" toolTIp="Latitud Inicial de Ruta" title="Latitud Inicial de Ruta"/>
+    <componentsUI name="LongitudFin" label="Longitud Final: " toolTIp="Longitud Final" title="Longitud Final de Ruta"/>
+    <componentsUI name="LatitudFin" label="Latitud Fin: " toolTIp="Latitud Final de Ruta" title="LATITUDFIN"/>
+    <componentsUI name="CupoTotal" label="Cupo M&#xe1;ximo: " toolTIp="Capacidad m&#xe1;xima de ruta" title="Latitud Final de Ruta"/>
+    <componentsUI name="FechaEjecucion" label="Fecha de Ejecuci&#xf3;n: " toolTIp="Fecha de Ejecuci&#xf3;n de Ruta" title="Fecha de Ejecuci&#xf3;n"/>
+    <componentsUI name="Descripcion" label="Descripci&#xf3;n: " toolTIp="Descripci&#xf3;n de Ruta" title="Descripci&#xf3;n detallada de ruta"/>
+    <componentsUI name="Condiciones" label="Condiciones: " toolTIp="Condiciones de Ruta" title="Condici&#xf3;n de ruta"/>
+  </features>
+  <features xsi:type="mrtrm:Form" name="UsuarioF">
+    <componentsUI name="EmailN" label="Email: " toolTIp="Correo Electr&#xf3;nico" title="EMAIL"/>
+    <componentsUI name="Nombre" label="NombreLabel" toolTIp="Ingrese Nombre" title="NOMBRE"/>
+    <componentsUI name="Password" label="Password: " toolTIp="Contrase&#xf1;a de acceso" title="PASSWORD"/>
+  </features>
+  <features xsi:type="mrtrm:Lista" name="Veh&#xed;culoF"/>
+</mrtrm:WebApplication>

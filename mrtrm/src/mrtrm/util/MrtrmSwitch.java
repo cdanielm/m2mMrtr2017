@@ -78,12 +78,6 @@ public class MrtrmSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case MrtrmPackage.ACTION_SERVICE: {
-				ActionService actionService = (ActionService)theEObject;
-				T result = caseActionService(actionService);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case MrtrmPackage.LISTA: {
 				Lista lista = (Lista)theEObject;
 				T result = caseLista(lista);
@@ -98,22 +92,15 @@ public class MrtrmSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case MrtrmPackage.DETAIL: {
-				Detail detail = (Detail)theEObject;
-				T result = caseDetail(detail);
-				if (result == null) result = caseFeature(detail);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case MrtrmPackage.COMPONENT_UI: {
 				ComponentUI componentUI = (ComponentUI)theEObject;
 				T result = caseComponentUI(componentUI);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case MrtrmPackage.PARAMETER: {
-				Parameter parameter = (Parameter)theEObject;
-				T result = caseParameter(parameter);
+			case MrtrmPackage.NEW_INTERFACE6: {
+				NewInterface6 newInterface6 = (NewInterface6)theEObject;
+				T result = caseNewInterface6(newInterface6);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -152,21 +139,6 @@ public class MrtrmSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Action Service</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Action Service</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseActionService(ActionService object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Lista</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -197,21 +169,6 @@ public class MrtrmSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Detail</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Detail</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseDetail(Detail object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Component UI</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -227,17 +184,17 @@ public class MrtrmSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Parameter</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>New Interface6</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Parameter</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>New Interface6</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseParameter(Parameter object) {
+	public T caseNewInterface6(NewInterface6 object) {
 		return null;
 	}
 

@@ -16,8 +16,8 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link mrtrm.Feature#getName <em>Name</em>}</li>
- *   <li>{@link mrtrm.Feature#getActionServices <em>Action Services</em>}</li>
  *   <li>{@link mrtrm.Feature#getComponentsUI <em>Components UI</em>}</li>
+ *   <li>{@link mrtrm.Feature#getUrl <em>Url</em>}</li>
  * </ul>
  *
  * @see mrtrm.MrtrmPackage#getFeature()
@@ -52,32 +52,6 @@ public interface Feature extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Action Services</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Action Services</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Action Services</em>' reference.
-	 * @see #setActionServices(ActionService)
-	 * @see mrtrm.MrtrmPackage#getFeature_ActionServices()
-	 * @model
-	 * @generated
-	 */
-	ActionService getActionServices();
-
-	/**
-	 * Sets the value of the '{@link mrtrm.Feature#getActionServices <em>Action Services</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Action Services</em>' reference.
-	 * @see #getActionServices()
-	 * @generated
-	 */
-	void setActionServices(ActionService value);
-
-	/**
 	 * Returns the value of the '<em><b>Components UI</b></em>' containment reference list.
 	 * The list contents are of type {@link mrtrm.ComponentUI}.
 	 * <!-- begin-user-doc -->
@@ -92,5 +66,31 @@ public interface Feature extends EObject {
 	 * @generated
 	 */
 	EList<ComponentUI> getComponentsUI();
+
+	/**
+	 * Returns the value of the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Url</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Url</em>' attribute.
+	 * @see #setUrl(String)
+	 * @see mrtrm.MrtrmPackage#getFeature_Url()
+	 * @model
+	 * @generated
+	 */
+	String getUrl();
+
+	/**
+	 * Sets the value of the '{@link mrtrm.Feature#getUrl <em>Url</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Url</em>' attribute.
+	 * @see #getUrl()
+	 * @generated
+	 */
+	void setUrl(String value);
 
 } // Feature

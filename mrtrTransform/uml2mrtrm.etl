@@ -4,10 +4,8 @@ rule Model2WebApp
 	
 	to w : mrtrm!WebApplication {
 	
-	guard : m.hasStereotype("wspa::WebSinglePageAplication")
-	
+	guard : m.hasStereotype("wspa::WebSinglePageAplication")	
 	w.name = m.name;
-	
 	
 }
 
@@ -88,8 +86,12 @@ rule Property2Component
 		f.name = p.name;
 	}
 	f.label = p.getPropertyValue("ComponentUI", "label");
+	f.type = p.getTipo(p.type);
+	f.title = p.getPropertyValue("ComponentUI","title");
+	f.toolTIp = p.getPropertyValue("ComponentUI","tooltip");
 	//f.toolTip = p.getPropertyValue("Component", "toolTip");
 	p.class.equivalent().componentsUI.add(f);
+	
 	//"Nombre Feature: "+p.feature.name.print();
 } 
 
@@ -171,6 +173,17 @@ rule Property2RegularExpressionValidator
 	v.expression = p.getPropertyValue("RegExField", "expression"); 
 	p.equivalent().validators.add(v);
 }*/
+
+operation uml!Element getTipo( tipo : uml!Type) : Any{
+	var tiposMap = Map {
+		"LABEL" = mrtrm!ComponentUIType#LABEL,
+		"TEXT" = mrtrm!ComponentUIType#TEXT,
+		"TEXTAREA" = mrtrm!ComponentUIType#TEXTAREA,
+		"TABLE"=mrtrm!ComponentUIType#TABLE,
+		"DATE" = mrtrm!ComponentUIType#DATE
+	};
+	return tiposMap.get(tipo.name);
+}
 
 
 operation Any hasStereotype(stereotype : String) : Boolean {

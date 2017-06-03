@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link mrtrm.ComponentUI#getLabel <em>Label</em>}</li>
  *   <li>{@link mrtrm.ComponentUI#getToolTIp <em>Tool TIp</em>}</li>
  *   <li>{@link mrtrm.ComponentUI#getType <em>Type</em>}</li>
+ *   <li>{@link mrtrm.ComponentUI#getTitle <em>Title</em>}</li>
  * </ul>
  *
  * @see mrtrm.MrtrmPackage#getComponentUI()
@@ -131,5 +132,31 @@ public interface ComponentUI extends EObject {
 	 * @generated
 	 */
 	void setType(ComponentUIType value);
+
+	/**
+	 * Returns the value of the '<em><b>Title</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Title</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Title</em>' attribute.
+	 * @see #setTitle(String)
+	 * @see mrtrm.MrtrmPackage#getComponentUI_Title()
+	 * @model
+	 * @generated
+	 */
+	String getTitle();
+
+	/**
+	 * Sets the value of the '{@link mrtrm.ComponentUI#getTitle <em>Title</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Title</em>' attribute.
+	 * @see #getTitle()
+	 * @generated
+	 */
+	void setTitle(String value);
 
 } // ComponentUI

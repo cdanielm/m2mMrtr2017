@@ -1,0 +1,69 @@
+<div class="panel panel-default">
+    <div class="panel-heading" style="background-color: darkred; color: white">
+        <div class="row">
+            Estudiantes
+        </div>
+    </div>
+    <div class="panel-body">
+        <form name="formVehículoF" ng-submit="guardar(formVehículoF)" novalidate>
+            <div class="form-group col-md-12 ">                
+ 
+            	<div class="form-group col-md-6">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre del Vehículo" ng-model="objVehículoF.NombreN">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>Placa: </label>
+                    <input type="text" class="form-control" placeholder="Placa Colombiana de Vehículo" ng-model="objVehículoF.Placa">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>Color: </label>
+                    <input type="text" class="form-control" placeholder="Color Vehículo" ng-model="objVehículoF.Color">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>Tipo: </label>
+                    <input type="text" class="form-control" placeholder="Tipo de Vehñiculo" ng-model="objVehículoF.TipoVehiculo">
+                </div>
+            
+                
+                <button ng-disabled="formVehículoF.$invalid" type="submit" class="btn btn-primary">Guardar VehículoF</button>
+            </div>
+        </form>
+        <table class="table table-hover">
+            <tr>
+ 
+            	<td>NOMBRE</td>
+ 
+            	<td>PLACA</td>
+ 
+            	<td>COLOR</td>
+ 
+            	<td>TIPO</td>
+            </tr>
+            <tr ng-repeat="item in listVehículoF">
+                <td><button class="btn btn-primary" ng-click="edit(item)"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i></button></td>
+                <td><button class="btn btn-danger" ng-click="deleted(item)"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></button></td>
+ 
+		            <td>
+                    	<p>{{item.NombreN}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.Placa}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.Color}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.TipoVehiculo}}</p>
+	                </td>	                
+                
+            </tr>
+        </table>
+    </div>
+</div>

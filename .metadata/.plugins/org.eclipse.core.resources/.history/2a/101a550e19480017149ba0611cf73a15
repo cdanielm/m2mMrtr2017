@@ -1,0 +1,51 @@
+[%
+	var nombreFeature= feature.name;
+	
+	var listaComponentes :String = "";
+	var listaComponentesScope :String="";
+	for(componente in feature.componentsUI){
+		listaComponentes = listaComponentes+componente.name+",";
+		listaComponentesScope = listaComponentesScope+"$scope."+componente.name+",";
+	}
+%]
+
+angular.module('firstAngular')
+        .controller('[%=nombreFeature%]Ctrl', function ($scope) {
+            $scope.objPersona = {};
+            $scope.listEstudiantes = [];            
+            //$scope.listEstudiantes.push({nombre:'luis miguel'});
+            
+            $scope.guardar = function (form1) {
+                if (form1.$invalid)
+                    return;
+                $scope.listEstudiantes.push($scope.objPersona);
+                $scope.objPersona = {};
+                alert("Se guardo Correctamente");
+            };
+            $scope.deleted = function (item) {
+                var indice = $scope.listEstudiantes.indexOf(item);
+                $scope.listEstudiantes.splice(indice, 1);
+            }
+            $scope.edit = function (item) {
+                $scope.objPersona = item;
+            }
+        });
+
+AdminModule.controller('[%=nombreFeature%]', function($scope, $cordovaSQLite) {
+
+  $scope.list[%=nombreFeature%] = function() {
+    var query = "SELECT * FROM [%=nombreFeature%]";
+    $cordovaSQLite.execute(db, query);
+  }
+
+  $scope.add[%=nombreFeature%] = function(){
+    var query = "INSERT INTO [%=nombreFeature%] ([%=listaComponentes%]) VALUES (?, ?)";
+    $cordovaSQLite.execute(db, query, [[%=listaComponentesScope%]]);
+    [%
+    for(componente in feature.componentsUI){
+		out.println("     $scope."+componente.name+"='';");
+	}
+    %]
+  }
+
+});

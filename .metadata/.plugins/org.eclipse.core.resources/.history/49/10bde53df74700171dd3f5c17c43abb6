@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mrtrm:WebApplication xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mrtrm="http://www.example.org/mrtrm" xmi:id="_q6xXEEfEEeeFZrtwuGXWWQ" name="Mi Ruta tu Ruta">
+  <features xsi:type="mrtrm:Form" xmi:id="_q62PkEfEEeeFZrtwuGXWWQ" name="Veh&#xed;culoF">
+    <componentsUI xmi:id="_q62PkUfEEeeFZrtwuGXWWQ" name="Nombre" label=""/>
+    <componentsUI xmi:id="_q62PkkfEEeeFZrtwuGXWWQ" name="Placa"/>
+    <componentsUI xmi:id="_q62Pk0fEEeeFZrtwuGXWWQ" name="Color"/>
+    <componentsUI xmi:id="_q62PlEfEEeeFZrtwuGXWWQ" name="TipoVehiculo"/>
+  </features>
+  <features xsi:type="mrtrm:Form" xmi:id="_q62PlUfEEeeFZrtwuGXWWQ" name="Postulaci&#xf3;nF">
+    <componentsUI xmi:id="_q62PlkfEEeeFZrtwuGXWWQ" name="FechaPostulacion"/>
+    <componentsUI xmi:id="_q62Pl0fEEeeFZrtwuGXWWQ" name="EstadoPostulacion"/>
+  </features>
+  <features xsi:type="mrtrm:Form" xmi:id="_q62PmEfEEeeFZrtwuGXWWQ" name="Ruta">
+    <componentsUI xmi:id="_q62PmUfEEeeFZrtwuGXWWQ" name="Nombre"/>
+    <componentsUI xmi:id="_q622oEfEEeeFZrtwuGXWWQ" name="LongitudInicio"/>
+    <componentsUI xmi:id="_q622oUfEEeeFZrtwuGXWWQ" name="LatitudInicio"/>
+    <componentsUI xmi:id="_q622okfEEeeFZrtwuGXWWQ" name="LongitudFin"/>
+    <componentsUI xmi:id="_q622o0fEEeeFZrtwuGXWWQ" name="LatitudFin"/>
+    <componentsUI xmi:id="_q622pEfEEeeFZrtwuGXWWQ" name="CupoTotal"/>
+    <componentsUI xmi:id="_q622pUfEEeeFZrtwuGXWWQ" name="FechaEjecucion"/>
+    <componentsUI xmi:id="_q622pkfEEeeFZrtwuGXWWQ" name="Descripcion"/>
+    <componentsUI xmi:id="_q622p0fEEeeFZrtwuGXWWQ" name="Condiciones"/>
+  </features>
+  <features xsi:type="mrtrm:Form" xmi:id="_q622qEfEEeeFZrtwuGXWWQ" name="UsuarioF">
+    <componentsUI xmi:id="_q622qUfEEeeFZrtwuGXWWQ" name="Email"/>
+    <componentsUI xmi:id="_q622qkfEEeeFZrtwuGXWWQ" name="Nombre" label="NombreLabel"/>
+    <componentsUI xmi:id="_q622q0fEEeeFZrtwuGXWWQ" name="contrasena"/>
+  </features>
+  <features xsi:type="mrtrm:Lista" xmi:id="_q622rEfEEeeFZrtwuGXWWQ" name="Veh&#xed;culoF"/>
+</mrtrm:WebApplication>

@@ -76,10 +76,6 @@ public class MrtrmAdapterFactory extends AdapterFactoryImpl {
 				return createFeatureAdapter();
 			}
 			@Override
-			public Adapter caseActionService(ActionService object) {
-				return createActionServiceAdapter();
-			}
-			@Override
 			public Adapter caseLista(Lista object) {
 				return createListaAdapter();
 			}
@@ -88,16 +84,12 @@ public class MrtrmAdapterFactory extends AdapterFactoryImpl {
 				return createFormAdapter();
 			}
 			@Override
-			public Adapter caseDetail(Detail object) {
-				return createDetailAdapter();
-			}
-			@Override
 			public Adapter caseComponentUI(ComponentUI object) {
 				return createComponentUIAdapter();
 			}
 			@Override
-			public Adapter caseParameter(Parameter object) {
-				return createParameterAdapter();
+			public Adapter caseNewInterface6(NewInterface6 object) {
+				return createNewInterface6Adapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -148,20 +140,6 @@ public class MrtrmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link mrtrm.ActionService <em>Action Service</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see mrtrm.ActionService
-	 * @generated
-	 */
-	public Adapter createActionServiceAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link mrtrm.Lista <em>Lista</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -190,20 +168,6 @@ public class MrtrmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link mrtrm.Detail <em>Detail</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see mrtrm.Detail
-	 * @generated
-	 */
-	public Adapter createDetailAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link mrtrm.ComponentUI <em>Component UI</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -218,16 +182,16 @@ public class MrtrmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link mrtrm.Parameter <em>Parameter</em>}'.
+	 * Creates a new adapter for an object of class '{@link mrtrm.NewInterface6 <em>New Interface6</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see mrtrm.Parameter
+	 * @see mrtrm.NewInterface6
 	 * @generated
 	 */
-	public Adapter createParameterAdapter() {
+	public Adapter createNewInterface6Adapter() {
 		return null;
 	}
 

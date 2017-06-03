@@ -40,15 +40,6 @@ public interface MrtrmFactory extends EFactory {
 	Feature createFeature();
 
 	/**
-	 * Returns a new object of class '<em>Action Service</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Action Service</em>'.
-	 * @generated
-	 */
-	ActionService createActionService();
-
-	/**
 	 * Returns a new object of class '<em>Lista</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -67,15 +58,6 @@ public interface MrtrmFactory extends EFactory {
 	Form createForm();
 
 	/**
-	 * Returns a new object of class '<em>Detail</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Detail</em>'.
-	 * @generated
-	 */
-	Detail createDetail();
-
-	/**
 	 * Returns a new object of class '<em>Component UI</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -83,15 +65,6 @@ public interface MrtrmFactory extends EFactory {
 	 * @generated
 	 */
 	ComponentUI createComponentUI();
-
-	/**
-	 * Returns a new object of class '<em>Parameter</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Parameter</em>'.
-	 * @generated
-	 */
-	Parameter createParameter();
 
 	/**
 	 * Returns the package supported by this factory.

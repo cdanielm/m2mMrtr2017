@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mrtrm:WebApplication xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mrtrm="http://www.example.org/mrtrm" xmi:id="_EH1RQEgZEeetkbRSrE3NXQ" name="MiRutatuRutaApp">
+  <features xsi:type="mrtrm:Form" xmi:id="_EH2fYEgZEeetkbRSrE3NXQ" name="Veh&#xed;culoF">
+    <componentsUI xmi:id="_EH3tgEgZEeetkbRSrE3NXQ" name="NombreN" label="Nombre" title=""/>
+    <componentsUI xmi:id="_EH4UkEgZEeetkbRSrE3NXQ" name="Placa" label="Placa: "/>
+    <componentsUI xmi:id="_EH5isEgZEeetkbRSrE3NXQ" name="Color" label="Color: "/>
+    <componentsUI xmi:id="_EH6JwEgZEeetkbRSrE3NXQ" name="TipoVehiculo" label="Tipo: "/>
+  </features>
+  <features xsi:type="mrtrm:Form" xmi:id="_EH6w0EgZEeetkbRSrE3NXQ" name="Postulaci&#xf3;nF">
+    <componentsUI xmi:id="_EH7X4EgZEeetkbRSrE3NXQ" name="FechaPostulacionN" label="Fecha Postulaci&#xf3;n: " title=""/>
+    <componentsUI xmi:id="_EH7-8EgZEeetkbRSrE3NXQ" name="EstadoPostulacion" label="Estado Postulaci&#xf3;n: "/>
+  </features>
+  <features xsi:type="mrtrm:Form" xmi:id="_EH8mAEgZEeetkbRSrE3NXQ" name="Ruta">
+    <componentsUI xmi:id="_EH8mAUgZEeetkbRSrE3NXQ" name="Nombre" label="Nombre: "/>
+    <componentsUI xmi:id="_EH90IEgZEeetkbRSrE3NXQ" name="LongitudInicio" label="Longitud Inicio"/>
+    <componentsUI xmi:id="_EH_CQEgZEeetkbRSrE3NXQ" name="LatitudInicio" label="Latitud Inicial"/>
+    <componentsUI xmi:id="_EH_pUEgZEeetkbRSrE3NXQ" name="LongitudFin" label="Longitud Final: "/>
+    <componentsUI xmi:id="_EIA3cEgZEeetkbRSrE3NXQ" name="LatitudFin" label="Latitud Fin: "/>
+    <componentsUI xmi:id="_EIBegEgZEeetkbRSrE3NXQ" name="CupoTotal" label="Cupo M&#xe1;ximo: "/>
+    <componentsUI xmi:id="_EICFkEgZEeetkbRSrE3NXQ" name="FechaEjecucion" label="Fecha de Ejecuci&#xf3;n: "/>
+    <componentsUI xmi:id="_EICsoEgZEeetkbRSrE3NXQ" name="Descripcion" label="Descripci&#xf3;n: "/>
+    <componentsUI xmi:id="_EIDTsEgZEeetkbRSrE3NXQ" name="Condiciones" label="Condiciones: "/>
+  </features>
+  <features xsi:type="mrtrm:Form" xmi:id="_EID6wEgZEeetkbRSrE3NXQ" name="UsuarioF">
+    <componentsUI xmi:id="_EIEh0EgZEeetkbRSrE3NXQ" name="EmailN" label="Email: "/>
+    <componentsUI xmi:id="_EIFI4EgZEeetkbRSrE3NXQ" name="Nombre" label="NombreLabel"/>
+    <componentsUI xmi:id="_EIGXAEgZEeetkbRSrE3NXQ" name="Password" label="Password: "/>
+  </features>
+  <features xsi:type="mrtrm:Lista" xmi:id="_EIG-EEgZEeetkbRSrE3NXQ" name="Veh&#xed;culoF"/>
+</mrtrm:WebApplication>

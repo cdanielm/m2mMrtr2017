@@ -1,0 +1,22 @@
+
+angular.module('firstAngular')
+        .controller('VehículoFCtrl', function ($scope) {
+            $scope.objVehículoF = {};
+            $scope.listVehículoFs = [];            
+            //$scope.listVehículoFs.push({nombre:'luis miguel'});
+            
+            $scope.guardar = function (form1) {
+                if (form1.$invalid)
+                    return;
+                $scope.listVehículoFs.push($scope.objPersona);
+                $scope.objVehículoF = {};
+                alert("Se guardo Correctamente");
+            };
+            $scope.deleted = function (item) {
+                var indice = $scope.listVehículoFs.indexOf(item);
+                $scope.listVehículoFs.splice(indice, 1);
+            }
+            $scope.edit = function (item) {
+                $scope.objVehículoF = item;
+            }
+        });

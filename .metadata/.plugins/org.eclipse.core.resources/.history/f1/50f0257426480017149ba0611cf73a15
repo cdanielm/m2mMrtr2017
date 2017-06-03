@@ -1,0 +1,58 @@
+<div class="panel panel-default">
+    <div class="panel-heading" style="background-color: darkred; color: white">
+        <div class="row">
+            Estudiantes
+        </div>
+    </div>
+    <div class="panel-body">
+        <form name="formUsuarioF" ng-submit="guardar(formUsuarioF)" novalidate>
+            <div class="form-group col-md-12 ">                
+ 
+            	<div class="form-group col-md-6">
+                    <label>Email: </label>
+                    <input type="text" class="form-control" placeholder="Correo Electrónico" ng-model="objUsuarioF.EmailN">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>NombreLabel</label>
+                    <input type="text" class="form-control" placeholder="Ingrese Nombre" ng-model="objUsuarioF.Nombre">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>Password: </label>
+                    <input type="text" class="form-control" placeholder="Contraseña de acceso" ng-model="objUsuarioF.Password">
+                </div>
+            
+                
+                <button ng-disabled="formUsuarioF.$invalid" type="submit" class="btn btn-primary">Guardar UsuarioF</button>
+            </div>
+        </form>
+        <table class="table table-hover">
+            <tr>
+ 
+            	<td>EMAIL</td>
+ 
+            	<td>NOMBRE</td>
+ 
+            	<td>PASSWORD</td>
+            </tr>
+            <tr ng-repeat="item in listUsuarioF">
+                <td><button class="btn btn-primary" ng-click="edit(item)"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i></button></td>
+                <td><button class="btn btn-danger" ng-click="deleted(item)"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></button></td>
+ 
+		            <td>
+                    	<p>{{item.EmailN}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.Nombre}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.Password}}</p>
+	                </td>	                
+                
+            </tr>
+        </table>
+    </div>
+</div>

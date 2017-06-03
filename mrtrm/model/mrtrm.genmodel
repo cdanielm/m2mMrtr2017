@@ -18,25 +18,18 @@
     </genClasses>
     <genClasses ecoreClass="mrtrm.ecore#//Feature">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//Feature/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mrtrm.ecore#//Feature/actionServices"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mrtrm.ecore#//Feature/componentsUI"/>
-    </genClasses>
-    <genClasses ecoreClass="mrtrm.ecore#//ActionService">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//ActionService/action"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mrtrm.ecore#//ActionService/parameters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//Feature/url"/>
     </genClasses>
     <genClasses ecoreClass="mrtrm.ecore#//Lista"/>
     <genClasses ecoreClass="mrtrm.ecore#//Form"/>
-    <genClasses ecoreClass="mrtrm.ecore#//Detail"/>
     <genClasses ecoreClass="mrtrm.ecore#//ComponentUI">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//ComponentUI/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//ComponentUI/label"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//ComponentUI/toolTIp"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//ComponentUI/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//ComponentUI/title"/>
     </genClasses>
-    <genClasses ecoreClass="mrtrm.ecore#//Parameter">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//Parameter/type"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mrtrm.ecore#//Parameter/name"/>
-    </genClasses>
+    <genClasses image="false" ecoreClass="mrtrm.ecore#//NewInterface6"/>
   </genPackages>
 </genmodel:GenModel>

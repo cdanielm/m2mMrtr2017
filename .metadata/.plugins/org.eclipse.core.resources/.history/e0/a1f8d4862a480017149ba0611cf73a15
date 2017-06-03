@@ -1,0 +1,124 @@
+<div class="panel panel-default">
+    <div class="panel-heading" style="background-color: darkred; color: white">
+        <div class="row">
+            Estudiantes
+        </div>
+    </div>
+    <div class="panel-body">
+        <form name="formRuta" ng-submit="guardar(formRuta)" novalidate>
+            <div class="form-group col-md-12 ">                
+ 
+            	<div class="form-group col-md-6">
+                    <label>Nombre: </label>
+                    <input type="text" class="form-control" placeholder="Nombre de la Ruta" ng-model="objRuta.Nombre">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>Longitud Inicio</label>
+                    <input type="text" class="form-control" placeholder="Longitud Inicial" ng-model="objRuta.LongitudInicio">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>Latitud Inicial</label>
+                    <input type="text" class="form-control" placeholder="Latitud Inicial de Ruta" ng-model="objRuta.LatitudInicio">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>Longitud Final: </label>
+                    <input type="text" class="form-control" placeholder="Longitud Final" ng-model="objRuta.LongitudFin">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>Latitud Fin: </label>
+                    <input type="text" class="form-control" placeholder="Latitud Final de Ruta" ng-model="objRuta.LatitudFin">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>Cupo Máximo: </label>
+                    <input type="text" class="form-control" placeholder="Capacidad máxima de ruta" ng-model="objRuta.CupoTotal">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>Fecha de Ejecución: </label>
+                    <input type="text" class="form-control" placeholder="Fecha de Ejecución de Ruta" ng-model="objRuta.FechaEjecucion">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>Descripción: </label>
+                    <input type="text" class="form-control" placeholder="Descripción de Ruta" ng-model="objRuta.Descripcion">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>Condiciones: </label>
+                    <input type="text" class="form-control" placeholder="Condiciones de Ruta" ng-model="objRuta.Condiciones">
+                </div>
+            
+                
+                <button ng-disabled="formRuta.$invalid" type="submit" class="btn btn-primary">Guardar Ruta</button>
+            </div>
+        </form>
+        <table class="table table-hover">
+            <tr>
+ 
+            	<td>NOMBRE</td>
+ 
+            	<td>Longitud Inicial de Ruta</td>
+ 
+            	<td>Latitud Inicial de Ruta</td>
+ 
+            	<td>Longitud Final de Ruta</td>
+ 
+            	<td>LATITUDFIN</td>
+ 
+            	<td>Latitud Final de Ruta</td>
+ 
+            	<td>Fecha de Ejecución</td>
+ 
+            	<td>Descripción detallada de ruta</td>
+ 
+            	<td>Condición de ruta</td>
+            </tr>
+            <tr ng-repeat="item in listRuta">
+                <td><button class="btn btn-primary" ng-click="edit(item)"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i></button></td>
+                <td><button class="btn btn-danger" ng-click="deleted(item)"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></button></td>
+ 
+		            <td>
+                    	<p>{{item.Nombre}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.LongitudInicio}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.LatitudInicio}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.LongitudFin}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.LatitudFin}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.CupoTotal}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.FechaEjecucion}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.Descripcion}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.Condiciones}}</p>
+	                </td>	                
+                
+            </tr>
+        </table>
+    </div>
+</div>

@@ -59,12 +59,9 @@ public class MrtrmFactoryImpl extends EFactoryImpl implements MrtrmFactory {
 		switch (eClass.getClassifierID()) {
 			case MrtrmPackage.WEB_APPLICATION: return createWebApplication();
 			case MrtrmPackage.FEATURE: return createFeature();
-			case MrtrmPackage.ACTION_SERVICE: return createActionService();
 			case MrtrmPackage.LISTA: return createLista();
 			case MrtrmPackage.FORM: return createForm();
-			case MrtrmPackage.DETAIL: return createDetail();
 			case MrtrmPackage.COMPONENT_UI: return createComponentUI();
-			case MrtrmPackage.PARAMETER: return createParameter();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -125,16 +122,6 @@ public class MrtrmFactoryImpl extends EFactoryImpl implements MrtrmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ActionService createActionService() {
-		ActionServiceImpl actionService = new ActionServiceImpl();
-		return actionService;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Lista createLista() {
 		ListaImpl lista = new ListaImpl();
 		return lista;
@@ -155,29 +142,9 @@ public class MrtrmFactoryImpl extends EFactoryImpl implements MrtrmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Detail createDetail() {
-		DetailImpl detail = new DetailImpl();
-		return detail;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public ComponentUI createComponentUI() {
 		ComponentUIImpl componentUI = new ComponentUIImpl();
 		return componentUI;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Parameter createParameter() {
-		ParameterImpl parameter = new ParameterImpl();
-		return parameter;
 	}
 
 	/**

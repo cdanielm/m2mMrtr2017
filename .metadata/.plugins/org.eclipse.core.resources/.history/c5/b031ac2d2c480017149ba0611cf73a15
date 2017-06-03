@@ -1,0 +1,29 @@
+
+angular.module("firstAngular", ['ngMessages', 'ui.router'])
+       .config(function ($stateProvider, $urlRouterProvider, $httpProvider) {
+
+           $stateProvider           
+           .state('masterPage',
+            {
+                templateUrl: 'scripts/vistas/masterView.html'
+            })
+         
+                [%
+           for(feature in features){%]
+               .state('masterPage.estudiantes',
+            {
+                templateUrl: 'scripts/vistas/[%=feature.name%]View.html',
+                controller: '[%=feature.name%]Ctrl',
+                url: '/[%=feature.name%]s'
+            })
+             [%
+           }
+           %]         
+           $urlRouterProvider.otherwise('/UsuarioFs');
+          // $httpProvider.interceptors.push('interceptorApp');
+
+       });
+
+angular.module("firstAngular").constant('ngConstantes', {
+    apiUrl: 'http://localhost:1114/'
+});

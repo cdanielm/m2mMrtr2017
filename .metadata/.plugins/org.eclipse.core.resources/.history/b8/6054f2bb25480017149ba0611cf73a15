@@ -1,0 +1,49 @@
+
+angular.module("firstAngular", ['ngMessages', 'ui.router'])
+       .config(function ($stateProvider, $urlRouterProvider, $httpProvider) {
+
+           $stateProvider           
+           .state('masterPage',
+            {
+                templateUrl: 'scripts/vistas/masterView.html'
+            })
+         
+               .state('masterPage.estudiantes',
+            {
+                templateUrl: 'scripts/vistas/VehículoFView.html',
+                controller: 'VehículoFCtrl',
+                url: 'VehículoFs'
+            })
+               .state('masterPage.estudiantes',
+            {
+                templateUrl: 'scripts/vistas/PostulaciónFView.html',
+                controller: 'PostulaciónFCtrl',
+                url: 'PostulaciónFs'
+            })
+               .state('masterPage.estudiantes',
+            {
+                templateUrl: 'scripts/vistas/RutaView.html',
+                controller: 'RutaCtrl',
+                url: 'Rutas'
+            })
+               .state('masterPage.estudiantes',
+            {
+                templateUrl: 'scripts/vistas/UsuarioFView.html',
+                controller: 'UsuarioFCtrl',
+                url: 'UsuarioFs'
+            })
+               .state('masterPage.estudiantes',
+            {
+                templateUrl: 'scripts/vistas/VehículoFView.html',
+                controller: 'VehículoFCtrl',
+                url: 'VehículoFs'
+            })
+         
+           $urlRouterProvider.otherwise('/UsuarioFs');
+          // $httpProvider.interceptors.push('interceptorApp');
+
+       });
+
+angular.module("firstAngular").constant('ngConstantes', {
+    apiUrl: 'http://localhost:1114/'
+});

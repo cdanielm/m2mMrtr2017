@@ -1,0 +1,47 @@
+<div class="panel panel-default">
+    <div class="panel-heading" style="background-color: darkred; color: white">
+        <div class="row">
+            Estudiantes
+        </div>
+    </div>
+    <div class="panel-body">
+        <form name="formPostulaciónF" ng-submit="guardar(formPostulaciónF)" novalidate>
+            <div class="form-group col-md-12 ">                
+ 
+            	<div class="form-group col-md-6">
+                    <label>Fecha Postulación: </label>
+                    <input type="text" class="form-control" placeholder="Fecha de Postulación de Ruta" ng-model="objPostulaciónF.FechaPostulacionN">
+                </div>
+ 
+            	<div class="form-group col-md-6">
+                    <label>Estado Postulación: </label>
+                    <input type="text" class="form-control" placeholder="Estado la postulación Actual" ng-model="objPostulaciónF.EstadoPostulacion">
+                </div>
+            
+                
+                <button ng-disabled="formPostulaciónF.$invalid" type="submit" class="btn btn-primary">Guardar PostulaciónF</button>
+            </div>
+        </form>
+        <table class="table table-hover">
+            <tr>
+ 
+            	<td>FECHA POSTULACION</td>
+ 
+            	<td>Estado dela postulación de la Ruta.</td>
+            </tr>
+            <tr ng-repeat="item in listPostulaciónF">
+                <td><button class="btn btn-primary" ng-click="edit(item)"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i></button></td>
+                <td><button class="btn btn-danger" ng-click="deleted(item)"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></button></td>
+ 
+		            <td>
+                    	<p>{{item.FechaPostulacionN}}</p>
+	                </td>	                
+ 
+		            <td>
+                    	<p>{{item.EstadoPostulacion}}</p>
+	                </td>	                
+                
+            </tr>
+        </table>
+    </div>
+</div>

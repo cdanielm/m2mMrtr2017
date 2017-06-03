@@ -1,0 +1,56 @@
+<div class="panel panel-default">
+    <div class="panel-heading" style="background-color: darkred; color: white">
+        <div class="row">
+            Estudiantes
+        </div>
+    </div>
+    <div class="panel-body">
+        <form name="form[%=feature.name%]" ng-submit="guardar(form[%=feature.name%])" novalidate>
+            <div class="form-group col-md-12 ">                
+                [%
+            for(componente in feature.componentsUI){%] 
+            	<div class="form-group col-md-6">
+                    <label>[%=componente.label%]</label>
+                    <input type="text" class="form-control" placeholder="[%=componente.toolTIp%]" ng-model="[%=feature.name%].[%=componente.name%]">
+                </div>
+            [% } %]            
+                
+                <button ng-disabled="form[%=feature.name%].$invalid" type="submit" class="btn btn-primary">Guardar [%=feature.name%]</button>
+            </div>
+        </form>
+        <table class="table table-hover">
+            <tr>
+            [%
+            for(componente in feature.componentsUI){%] 
+            	<td>[%=componente.title%]</td>
+            [% } %]
+            </tr>
+            <tr ng-repeat="item in list[%=feature.name%]">
+                <td><button class="btn btn-primary" ng-click="edit(item)"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i></button></td>
+                <td><button class="btn btn-danger" ng-click="deleted(item)"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></button></td>
+				[%
+		            for(componente in feature.componentsUI){%] 
+		            <td>
+                    	<p>{{item.[%=componente.name%]}}</p>
+	                </td>
+	                <td>[%=componente.title%]</td>
+	            [% } %]
+                <td>
+                    <p>{{item.nombre}}</p>
+                </td>
+                <td>
+                    <p>{{item.universidad}}</p>
+                </td>
+                <td>
+                    <p>{{item.edad}}</p>
+                </td>
+                <td>
+                    <p>{{item.tcAngular}}</p>
+                </td>
+                <td>
+                    <p>{{item.version}}</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

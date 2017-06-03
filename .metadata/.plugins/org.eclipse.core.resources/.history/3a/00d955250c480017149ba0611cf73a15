@@ -1,0 +1,76 @@
+<div class="panel panel-default">
+    <div class="panel-heading" style="background-color: darkred; color: white">
+        <div class="row">
+            Estudiantes
+        </div>
+    </div>
+    <div class="panel-body">
+        <form name="form[%=feature.name%]" ng-submit="guardar(form[%=feature.name%])" novalidate>
+            <div class="form-group col-md-12 ">                
+                [%
+            for(componente in feature.componentsUI){%] 
+            	<div class="form-group col-md-6">
+                    <label>[%=componente.label%]</label>
+                    <input type="number" class="form-control" placeholder="[%=componente.toolTIp%]" ng-model="objPersona.[%=componente.name%]">
+                </div>
+            [% } %]
+            
+                <div class="form-group col-md-6">
+                    <label>Universidad</label>
+                    <input type="text" name="txtUniversidad" required ng-minlength="2" ng-maxlength="25"
+                           class="form-control" placeholder="Universidad" ng-model="objPersona.universidad">
+                    <div ng-messages="form1.txtUniversidad.$error" style="color: darkred" role="alert">
+                        <div ng-message="required">El Campo es requerido</div>
+                        <div ng-message="minlength">la minima longitud es 2</div>
+                        <div ng-message="maxlength">la maxima longitud es 5</div>
+                        <!--<div ng-message="email">email invalido</div>-->
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Edad</label>
+                    <input type="number" class="form-control" placeholder="Edad" ng-model="objPersona.edad">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Conoce Angular?</label>
+                    <input type="checkbox" class="form-control" ng-model="objPersona.tcAngular">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Version?</label>
+                    <input type="text" class="form-control" ng-model="objPersona.version">
+                </div>
+                <button ng-disabled="form1.$invalid" type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+        <table class="table table-hover">
+            <tr>
+                <td>Editar</td>
+                <td>Eliminar</td>
+                <td>Nombre</td>
+                <td>Universidad</td>
+                <td>Edad</td>
+                <td>Conoce Angular?</td>
+                <td>Version</td>
+            </tr>
+            <tr ng-repeat="item in listEstudiantes">
+                <td><button class="btn btn-primary" ng-click="edit(item)"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i></button></td>
+                <td><button class="btn btn-danger" ng-click="deleted(item)"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></button></td>
+
+                <td>
+                    <p>{{item.nombre}}</p>
+                </td>
+                <td>
+                    <p>{{item.universidad}}</p>
+                </td>
+                <td>
+                    <p>{{item.edad}}</p>
+                </td>
+                <td>
+                    <p>{{item.tcAngular}}</p>
+                </td>
+                <td>
+                    <p>{{item.version}}</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

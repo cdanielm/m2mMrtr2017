@@ -1,8 +1,0 @@
-[%
-//import "../integration-utils.eol";
-var appRoot = mrtrm!WebApplication;
-out.println(appRoot.name);
-//var features = appRoot.features;
-TemplateFactory.setOutputRoot("../GeneratedOutput/" + appRoot.name);
-%]
-

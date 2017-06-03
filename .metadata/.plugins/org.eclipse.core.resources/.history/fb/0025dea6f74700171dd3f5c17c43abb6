@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mrtrm="http://www.example.org/mrtrm">
+  <mrtrm:WebApplication name="MiRutatuRutaApp">
+    <features xsi:type="mrtrm:Form" name="Veh&#xed;culoF"/>
+    <features xsi:type="mrtrm:Form" name="Postulaci&#xf3;nF"/>
+    <features xsi:type="mrtrm:Form" name="Ruta"/>
+    <features xsi:type="mrtrm:Form" name="UsuarioF"/>
+    <features xsi:type="mrtrm:Lista" name="Veh&#xed;culoF"/>
+  </mrtrm:WebApplication>
+  <mrtrm:ComponentUI name="Nombre"/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+  <mrtrm:ComponentUI/>
+</xmi:XMI>

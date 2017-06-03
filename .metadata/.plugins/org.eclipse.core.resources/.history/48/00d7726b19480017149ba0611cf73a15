@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mrtrm:WebApplication xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mrtrm="http://www.example.org/mrtrm" name="MiRutatuRutaApp">
+  <features xsi:type="mrtrm:Form" name="Veh&#xed;culoF">
+    <componentsUI name="NombreN" label="Nombre"/>
+    <componentsUI name="Placa" label="Placa: "/>
+    <componentsUI name="Color" label="Color: "/>
+    <componentsUI name="TipoVehiculo" label="Tipo: "/>
+  </features>
+  <features xsi:type="mrtrm:Form" name="Postulaci&#xf3;nF">
+    <componentsUI name="FechaPostulacionN" label="Fecha Postulaci&#xf3;n: "/>
+    <componentsUI name="EstadoPostulacion" label="Estado Postulaci&#xf3;n: "/>
+  </features>
+  <features xsi:type="mrtrm:Form" name="Ruta">
+    <componentsUI name="Nombre" label="Nombre: "/>
+    <componentsUI name="LongitudInicio" label="Longitud Inicio"/>
+    <componentsUI name="LatitudInicio" label="Latitud Inicial"/>
+    <componentsUI name="LongitudFin" label="Longitud Final: "/>
+    <componentsUI name="LatitudFin" label="Latitud Fin: "/>
+    <componentsUI name="CupoTotal" label="Cupo M&#xe1;ximo: "/>
+    <componentsUI name="FechaEjecucion" label="Fecha de Ejecuci&#xf3;n: "/>
+    <componentsUI name="Descripcion" label="Descripci&#xf3;n: "/>
+    <componentsUI name="Condiciones" label="Condiciones: "/>
+  </features>
+  <features xsi:type="mrtrm:Form" name="UsuarioF">
+    <componentsUI name="EmailN" label="Email: "/>
+    <componentsUI name="Nombre" label="NombreLabel"/>
+    <componentsUI name="Password" label="Password: "/>
+  </features>
+  <features xsi:type="mrtrm:Lista" name="Veh&#xed;culoF"/>
+</mrtrm:WebApplication>

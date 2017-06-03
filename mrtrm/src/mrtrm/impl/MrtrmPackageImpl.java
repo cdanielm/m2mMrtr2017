@@ -2,16 +2,14 @@
  */
 package mrtrm.impl;
 
-import mrtrm.ActionService;
 import mrtrm.ComponentUI;
 import mrtrm.ComponentUIType;
-import mrtrm.Detail;
 import mrtrm.Feature;
 import mrtrm.Form;
 import mrtrm.Lista;
 import mrtrm.MrtrmFactory;
 import mrtrm.MrtrmPackage;
-import mrtrm.Parameter;
+import mrtrm.NewInterface6;
 import mrtrm.WebApplication;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -47,13 +45,6 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass actionServiceEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass listaEClass = null;
 
 	/**
@@ -68,13 +59,6 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass detailEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass componentUIEClass = null;
 
 	/**
@@ -82,7 +66,7 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass parameterEClass = null;
+	private EClass newInterface6EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -202,7 +186,7 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFeature_ActionServices() {
+	public EReference getFeature_ComponentsUI() {
 		return (EReference)featureEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -211,35 +195,8 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFeature_ComponentsUI() {
-		return (EReference)featureEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getActionService() {
-		return actionServiceEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getActionService_Action() {
-		return (EAttribute)actionServiceEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getActionService_Parameters() {
-		return (EReference)actionServiceEClass.getEStructuralFeatures().get(1);
+	public EAttribute getFeature_Url() {
+		return (EAttribute)featureEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -258,15 +215,6 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 */
 	public EClass getForm() {
 		return formEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getDetail() {
-		return detailEClass;
 	}
 
 	/**
@@ -319,8 +267,8 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getParameter() {
-		return parameterEClass;
+	public EAttribute getComponentUI_Title() {
+		return (EAttribute)componentUIEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -328,17 +276,8 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getParameter_Type() {
-		return (EAttribute)parameterEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getParameter_Name() {
-		return (EAttribute)parameterEClass.getEStructuralFeatures().get(1);
+	public EClass getNewInterface6() {
+		return newInterface6EClass;
 	}
 
 	/**
@@ -384,28 +323,21 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 
 		featureEClass = createEClass(FEATURE);
 		createEAttribute(featureEClass, FEATURE__NAME);
-		createEReference(featureEClass, FEATURE__ACTION_SERVICES);
 		createEReference(featureEClass, FEATURE__COMPONENTS_UI);
-
-		actionServiceEClass = createEClass(ACTION_SERVICE);
-		createEAttribute(actionServiceEClass, ACTION_SERVICE__ACTION);
-		createEReference(actionServiceEClass, ACTION_SERVICE__PARAMETERS);
+		createEAttribute(featureEClass, FEATURE__URL);
 
 		listaEClass = createEClass(LISTA);
 
 		formEClass = createEClass(FORM);
-
-		detailEClass = createEClass(DETAIL);
 
 		componentUIEClass = createEClass(COMPONENT_UI);
 		createEAttribute(componentUIEClass, COMPONENT_UI__NAME);
 		createEAttribute(componentUIEClass, COMPONENT_UI__LABEL);
 		createEAttribute(componentUIEClass, COMPONENT_UI__TOOL_TIP);
 		createEAttribute(componentUIEClass, COMPONENT_UI__TYPE);
+		createEAttribute(componentUIEClass, COMPONENT_UI__TITLE);
 
-		parameterEClass = createEClass(PARAMETER);
-		createEAttribute(parameterEClass, PARAMETER__TYPE);
-		createEAttribute(parameterEClass, PARAMETER__NAME);
+		newInterface6EClass = createEClass(NEW_INTERFACE6);
 
 		// Create enums
 		componentUITypeEEnum = createEEnum(COMPONENT_UI_TYPE);
@@ -441,7 +373,6 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 		// Add supertypes to classes
 		listaEClass.getESuperTypes().add(this.getFeature());
 		formEClass.getESuperTypes().add(this.getFeature());
-		detailEClass.getESuperTypes().add(this.getFeature());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(webApplicationEClass, WebApplication.class, "WebApplication", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -450,28 +381,21 @@ public class MrtrmPackageImpl extends EPackageImpl implements MrtrmPackage {
 
 		initEClass(featureEClass, Feature.class, "Feature", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getFeature_Name(), ecorePackage.getEString(), "name", null, 0, 1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getFeature_ActionServices(), this.getActionService(), null, "actionServices", null, 0, 1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFeature_ComponentsUI(), this.getComponentUI(), null, "componentsUI", null, 0, -1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(actionServiceEClass, ActionService.class, "ActionService", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getActionService_Action(), ecorePackage.getEString(), "action", null, 0, 1, ActionService.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getActionService_Parameters(), this.getParameter(), null, "parameters", null, 0, -1, ActionService.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFeature_Url(), ecorePackage.getEString(), "url", null, 0, 1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(listaEClass, Lista.class, "Lista", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(formEClass, Form.class, "Form", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(detailEClass, Detail.class, "Detail", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(componentUIEClass, ComponentUI.class, "ComponentUI", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getComponentUI_Name(), ecorePackage.getEString(), "name", null, 0, 1, ComponentUI.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getComponentUI_Label(), ecorePackage.getEString(), "label", null, 0, 1, ComponentUI.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getComponentUI_ToolTIp(), ecorePackage.getEString(), "toolTIp", null, 0, 1, ComponentUI.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getComponentUI_Type(), this.getComponentUIType(), "type", "TEXT", 0, 1, ComponentUI.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getComponentUI_Title(), ecorePackage.getEString(), "title", null, 0, 1, ComponentUI.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(parameterEClass, Parameter.class, "Parameter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getParameter_Type(), ecorePackage.getEString(), "type", null, 0, 1, Parameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getParameter_Name(), ecorePackage.getEString(), "name", null, 0, 1, Parameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(newInterface6EClass, NewInterface6.class, "NewInterface6", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Initialize enums and add enum literals
 		initEEnum(componentUITypeEEnum, ComponentUIType.class, "ComponentUIType");

@@ -1,0 +1,187 @@
+// Create the root element of the target model
+rule Model2WebApp
+	transform m : uml!Model
+	
+	to w : mrtrm!WebApplication {
+	
+	guard : m.hasStereotype("wspa::WebSinglePageAplication")
+	
+	w.name = m.name;
+	
+	
+}
+
+// Transform clases into forms and add them to the root element
+rule Class2Feature
+	transform c : uml!Class
+	to f : mrtrm!Feature {
+	
+	guard : c.hasStereotype("wspa::Feature") 
+	
+	var nameValue = c.getPropertyValue("Feature","name").asString(); 
+	if(nameValue.length() > 0) {
+		f.name = nameValue;
+	} else {
+		f.name = c.name + "Feature";
+	}
+	
+	//f.title = c.getPropertyValue("Form", "name");
+	c.namespace.equivalent().features.add(f);
+	
+ 	c.namespace.name.println();
+ 	c.name.println();
+}
+
+rule Class2Form
+	transform c : uml!Class
+	to f : mrtrm!Form {
+	
+	guard : c.hasStereotype("wspa::Form") 
+	
+	var nameValue = c.getPropertyValue("Form","name").asString(); 
+	if(nameValue.length() > 0) {
+		f.name = nameValue;
+	} else {
+		f.name = c.name + "Formulario";
+	}
+	
+	//f.title = c.getPropertyValue("Form", "name");
+	c.namespace.equivalent().features.add(f);
+	
+ 	c.namespace.name.println();
+ 	c.name.println();
+}
+
+rule Class2List
+	transform c : uml!Class
+	to f : mrtrm!Lista {
+	
+	guard : c.hasStereotype("wspa::List") 
+	
+	var nameValue = c.getPropertyValue("Lista","name").asString(); 
+	if(nameValue.length() > 0) {
+		f.name = nameValue;
+	} else {
+		f.name = c.name + "Lista";
+	}
+	
+	//f.title = c.getPropertyValue("Form", "name");
+	c.namespace.equivalent().features.add(f);
+	
+ 	c.namespace.name.println();
+ 	c.name.println();
+}
+
+// Transforms properties into fields and adds them to the corresponding Form
+rule Property2Component
+	transform p : uml!Property
+	to f : mrtrm!ComponentUI {
+	
+	guard {
+		return p.hasStereotype("wspa::ComponentUI");
+	}
+	
+	var nameValue = p.getPropertyValue("ComponentUI","name").asString(); 
+	if(nameValue.length() > 0) {
+		f.name = nameValue;
+	} else {
+		f.name = p.name;
+	}
+	f.label = p.getPropertyValue("ComponentUI", "label");
+	//f.toolTip = p.getPropertyValue("Component", "toolTip");
+	p.class.equivalent().componentsUI.add(f);
+	//"Nombre Feature: "+p.feature.name.print();
+} 
+
+/*@abstract
+rule Property2Validator
+	transform p : uml!Property
+	to v : mrtrm!Validator {
+	
+	guard {
+		return  p.hasStereotype("wspa::MandatoryField") or
+				p.hasStereotype("wspa::DateField") or p.hasStereotype("wspa::IntField") or
+				p.hasStereotype("wspa::RealField") or p.hasStereotype("wspa::RegExField");
+	}
+	
+	v.name = p.name + "Validator";
+	p.class.equivalent().formValidators.add(v);
+}
+
+rule Property2MandatoryValidator
+	transform p : uml!Property
+	to v : mrtrm!MandatoryValidator
+	extends Property2Validator {
+	
+	guard : p.hasStereotype("wspa::MandatoryField")
+	
+	p.equivalent().validators.add(v);
+}
+
+rule Property2DateValidator
+	transform p : uml!Property
+	to v : mrtrm!DateValidator
+	extends Property2Validator {
+	
+	guard : p.hasStereotype("wspa::DateField")
+	
+	v.format = p.getPropertyValue("DateField", "format");
+	p.equivalent().validators.add(v);
+}
+
+rule Property2IntegerValidator
+	transform p : uml!Property
+	to v : mrtrm!IntegerValidator
+	extends Property2Validator {
+	
+	guard : p.hasStereotype("wspa::IntField")
+	
+	var minValue = p.getPropertyValue("IntField", "minValue");
+	var maxValue = p.getPropertyValue("IntField", "maxValue"); 
+	if(minValue <> 0 or maxValue <> 0) {
+		v.minValue = minValue;
+		v.maxValue = maxValue;
+	} 
+	p.equivalent().validators.add(v);
+}
+
+rule Property2RealValidator
+	transform p : uml!Property
+	to v : mrtrm!RealValidator
+	extends Property2Validator {
+	
+	guard : p.hasStereotype("wspa::RealField")
+	
+	var minValue = p.getPropertyValue("RealField", "minValue");
+	var maxValue = p.getPropertyValue("RealField", "maxValue"); 
+	if(minValue <> 0 or maxValue <> 0) {
+		v.minValue = minValue;
+		v.maxValue = maxValue;
+	} 
+	p.equivalent().validators.add(v);
+}
+
+rule Property2RegularExpressionValidator
+	transform p : uml!Property
+	to v : mrtrm!RegularExpressionValidator
+	extends Property2Validator {
+	
+	guard : p.hasStereotype("wspa::RegExField")
+	
+	v.expression = p.getPropertyValue("RegExField", "expression"); 
+	p.equivalent().validators.add(v);
+}*/
+
+
+operation Any hasStereotype(stereotype : String) : Boolean {
+	var st = self.getAppliedStereotype(stereotype);
+	return self.isStereotypeApplied(st);
+}
+
+operation Any getPropertyValue(stereotypeName : String, propertyName : String) : Any {
+	var stereotype = self.getAppliedStereotypes().selectOne(s : uml!Stereotype | s.name = stereotypeName);
+	if(stereotype = null) {
+		stereotype = self.getAppliedStereotypes().first();
+	}
+	return self.getValue(stereotype, propertyName);
+}

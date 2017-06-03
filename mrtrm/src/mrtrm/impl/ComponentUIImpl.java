@@ -25,6 +25,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link mrtrm.impl.ComponentUIImpl#getLabel <em>Label</em>}</li>
  *   <li>{@link mrtrm.impl.ComponentUIImpl#getToolTIp <em>Tool TIp</em>}</li>
  *   <li>{@link mrtrm.impl.ComponentUIImpl#getType <em>Type</em>}</li>
+ *   <li>{@link mrtrm.impl.ComponentUIImpl#getTitle <em>Title</em>}</li>
  * </ul>
  *
  * @generated
@@ -109,6 +110,26 @@ public class ComponentUIImpl extends MinimalEObjectImpl.Container implements Com
 	 * @ordered
 	 */
 	protected ComponentUIType type = TYPE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTitle() <em>Title</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTitle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TITLE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTitle() <em>Title</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTitle()
+	 * @generated
+	 * @ordered
+	 */
+	protected String title = TITLE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -218,6 +239,27 @@ public class ComponentUIImpl extends MinimalEObjectImpl.Container implements Com
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getTitle() {
+		return title;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTitle(String newTitle) {
+		String oldTitle = title;
+		title = newTitle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MrtrmPackage.COMPONENT_UI__TITLE, oldTitle, title));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -229,6 +271,8 @@ public class ComponentUIImpl extends MinimalEObjectImpl.Container implements Com
 				return getToolTIp();
 			case MrtrmPackage.COMPONENT_UI__TYPE:
 				return getType();
+			case MrtrmPackage.COMPONENT_UI__TITLE:
+				return getTitle();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -252,6 +296,9 @@ public class ComponentUIImpl extends MinimalEObjectImpl.Container implements Com
 				return;
 			case MrtrmPackage.COMPONENT_UI__TYPE:
 				setType((ComponentUIType)newValue);
+				return;
+			case MrtrmPackage.COMPONENT_UI__TITLE:
+				setTitle((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -277,6 +324,9 @@ public class ComponentUIImpl extends MinimalEObjectImpl.Container implements Com
 			case MrtrmPackage.COMPONENT_UI__TYPE:
 				setType(TYPE_EDEFAULT);
 				return;
+			case MrtrmPackage.COMPONENT_UI__TITLE:
+				setTitle(TITLE_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -297,6 +347,8 @@ public class ComponentUIImpl extends MinimalEObjectImpl.Container implements Com
 				return TOOL_TIP_EDEFAULT == null ? toolTIp != null : !TOOL_TIP_EDEFAULT.equals(toolTIp);
 			case MrtrmPackage.COMPONENT_UI__TYPE:
 				return type != TYPE_EDEFAULT;
+			case MrtrmPackage.COMPONENT_UI__TITLE:
+				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -319,6 +371,8 @@ public class ComponentUIImpl extends MinimalEObjectImpl.Container implements Com
 		result.append(toolTIp);
 		result.append(", type: ");
 		result.append(type);
+		result.append(", title: ");
+		result.append(title);
 		result.append(')');
 		return result.toString();
 	}

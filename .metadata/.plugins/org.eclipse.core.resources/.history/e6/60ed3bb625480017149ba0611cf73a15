@@ -1,0 +1,22 @@
+
+angular.module('firstAngular')
+        .controller('PostulaciónFCtrl', function ($scope) {
+            $scope.objPostulaciónF = {};
+            $scope.listPostulaciónFs = [];            
+            //$scope.listPostulaciónFs.push({nombre:'luis miguel'});
+            
+            $scope.guardar = function (form1) {
+                if (form1.$invalid)
+                    return;
+                $scope.listPostulaciónFs.push($scope.objPersona);
+                $scope.objPostulaciónF = {};
+                alert("Se guardo Correctamente");
+            };
+            $scope.deleted = function (item) {
+                var indice = $scope.listPostulaciónFs.indexOf(item);
+                $scope.listPostulaciónFs.splice(indice, 1);
+            }
+            $scope.edit = function (item) {
+                $scope.objPostulaciónF = item;
+            }
+        });

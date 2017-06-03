@@ -1,7 +1,0 @@
-[%
-//import "../integration-utils.eol";
-var appRoot = wspa!WebApplication.all().first();
-out.println(appRoot.name);
-var folders = appRoot.folders;
-TemplateFactory.setOutputRoot("../GeneratedOutput/" + appRoot.name);
-%]
